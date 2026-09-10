@@ -273,18 +273,66 @@ footer {
   }
 }
 
-/* Rotor Glif U+2731 (Heavy Asterisk / Cool Mode) */
+/* Container Rotor */
 .ac-rotor {
   display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.2ch;
+  height: 1.2ch;
+  line-height: 1;
+  color: var(--link-color) !important;
+  /* Turunkan paksa secara visual tanpa merusak animasi baling di dalamnya */
+  transform: translateY(2px); /* atau 0.12em */
 }
 
-.ac-rotor::after {
-  content: "\2731";
-  font-size: 1em;
-  animation: coolSpin 2s linear infinite;
+/* Baling Asteris Murni CSS */
+.ac-rotor-fan {
+  position: relative !important;
+  top: 2px !important; /* Tepat di poros tengah optik kurung siku [ ] */
+  width: 0.9em;
+  height: 0.9em;
+  display: inline-block;
+  transform-origin: 50% 50%;
+  animation: pureCssSpin 1s linear infinite;
 }
 
-@keyframes coolSpin {
+/* 3 Bilah Silang Asteris (Garis Murni CSS) */
+.ac-rotor-fan,
+.ac-rotor-fan::before,
+.ac-rotor-fan::after {
+  /* Tiap bilah adalah garis tumpul simetris tepat di tengah */
+}
+
+.ac-rotor-fan span,
+.ac-rotor-fan::before,
+.ac-rotor-fan::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2.2px;             /* Ketebalan bilah */
+  height: 100%;
+  margin-left: -1.1px;      /* Tepat di tengah sumbu X */
+  background-color: currentColor;
+}
+
+/* Bilah 1: Vertikal (0°) */
+.ac-rotor-fan span {
+  transform: rotate(0deg);
+}
+
+/* Bilah 2: Diagonal Kanan (60°) */
+.ac-rotor-fan::before {
+  transform: rotate(60deg);
+}
+
+/* Bilah 3: Diagonal Kiri (120°) */
+.ac-rotor-fan::after {
+  transform: rotate(120deg);
+}
+
+@keyframes pureCssSpin {
   from { transform: rotate(0deg); }
   to   { transform: rotate(360deg); }
 }
