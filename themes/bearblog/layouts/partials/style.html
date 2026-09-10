@@ -1,0 +1,291 @@
+<style>
+@import url("https://rsms.me/inter/inter.css");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+
+:root {
+  --width: 720px;
+  --font-main: -apple-system, BlinkMacSystemFont, "Inter Display", sans-serif;
+  --font-secondary: -apple-system, BlinkMacSystemFont, Inter, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-scale: 1em;
+  --background-color: #fff;
+  --heading-color: #000;
+  --text-color: #000;
+  --link-color: #0000ff;
+  --visited-color: #0000ff;
+  --code-background-color: #f2f2f2;
+  --code-color: #222;
+  --blockquote-color: #000;
+}
+
+body {
+  font-family: var(--font-secondary);
+  font-size: var(--font-scale);
+  margin: auto;
+  padding: 20px;
+  max-width: var(--width);
+  text-align: left;
+  background-color: var(--background-color);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.5;
+  color: var(--text-color);
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-main);
+  color: var(--heading-color);
+  margin-bottom: 0.25rem !important;
+  line-height: 1.15 !important;
+}
+
+a {
+  color: var(--link-color);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+nav a {
+  margin-right: 8px;
+}
+
+strong,
+b {
+  color: var(--heading-color);
+}
+
+button {
+  margin: 0;
+  cursor: pointer;
+}
+
+time {
+  font-family: var(--font-mono);
+  font-style: normal;
+  font-size: 15px;
+}
+
+main {
+  line-height: 1.6;
+}
+
+table {
+  width: 100%;
+  font-family: var(--font-mono);
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid;
+  padding: 5px;
+  vertical-align: top;
+}
+
+hr {
+  border: 0;
+  border-top: 1px dashed;
+}
+
+img {
+  max-width: 100%;
+  -webkit-user-drag: none;
+}
+
+code {
+  font-family: var(--font-mono);
+  padding: 2px;
+  background-color: var(--code-background-color);
+  color: var(--code-color);
+  border-radius: 3px;
+}
+
+blockquote {
+  border-left: 1px solid #999;
+  color: var(--blockquote-color);
+  padding-left: 20px;
+}
+
+.title:hover {
+  text-decoration: none;
+}
+
+.title h1 {
+  font-size: 1.5em;
+}
+
+.inline {
+  width: auto !important;
+}
+
+.highlight,
+.code,
+pre {
+  padding: 15px 15px;
+  background-color: var(--code-background-color);
+  color: var(--code-color);
+  border-radius: 3px;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  overflow-x: auto;
+}
+
+pre code {
+  padding: 0;
+  line-height: 125%;
+}
+
+/* blog post list */
+ul.blog-posts {
+  list-style-type: none;
+  padding: unset;
+}
+
+ul.blog-posts li {
+  display: flex;
+}
+
+ul.blog-posts li span {
+  flex: 0 0 130px;
+}
+
+ul.blog-posts li a:visited {
+  color: var(--visited-color);
+}
+
+.mono {
+  font-family: var(--font-mono);
+}
+
+header nav {
+  margin-left: -8px !important; /* Tarik balik ke kiri sejajar judul */
+  padding-left: 0 !important;
+}
+
+/* Merapatkan jarak tanggal di bawah judul */
+main h1 + p,
+main h1 + time,
+main h1 + em,
+article header p {
+  margin-top: 0 !important;
+  margin-bottom: 1rem !important;
+}
+
+/* 1. Hilangkan dorongan tinggi paksa pada halaman */
+html,
+body {
+  min-height: auto !important;
+  height: auto !important;
+}
+
+/* 2. Matikan margin bawah berlebih pada kontainer utama di semua page */
+main,
+article,
+#content,
+.content {
+  margin-bottom: 1rem !important;
+  padding-bottom: 0 !important;
+}
+
+/* 3. Rapatkan elemen terakhir di dalam konten (paragraf, hr, tag, list) */
+main > *:last-child,
+article > *:last-child {
+  margin-bottom: 0.5rem !important;
+}
+
+/* 4. Tarik footer agar menempel kompak ke konten di atasnya */
+footer {
+  margin-top: -0.5rem !important;
+  padding-top: 0 !important;
+  padding-bottom: 1.5rem !important;
+}
+
+/* 1. Suhu Digital: Durasi Santai 3.2s (4-Phase Jump) */
+.ac-temp {
+  font-variant-numeric: tabular-nums;
+  min-width: 3.8ch;
+  text-align: right;
+}
+
+.ac-temp::after {
+  content: "30°C";
+  animation: tempCycleSantai 3.2s infinite steps(1);
+}
+
+@keyframes tempCycleSantai {
+  0%,
+  24% {
+    content: "30°C";
+  }
+  25%,
+  49% {
+    content: "26°C";
+  }
+  50%,
+  74% {
+    content: "21°C";
+  }
+  75%,
+  99% {
+    content: "16°C";
+  }
+  100% {
+    content: "30°C";
+  }
+}
+
+/* 2. Kaomoji Dinamis: Durasi Santai 3.2s Sinkron dengan Suhu */
+
+.ac-kao::after {
+  content: "(;; •_•)";
+  animation: kaoCycleSantai 3.2s infinite steps(1);
+}
+
+@keyframes kaoCycleSantai {
+  0%,
+  24% {
+    content: "(;;•_•)";
+  } /* 30°C: Gerah berkeringat */
+  25%,
+  49% {
+    content: "(·_·; )";
+  } /* 26°C: Mulai berhembus */
+  50%,
+  74% {
+    content: "(-_-; )";
+  } /* 21°C: Udara dingin menyelimuti */
+  75%,
+  99% {
+    content: "(*^-^)b";
+  } /* 16°C: Sejuk stabil, jempol mantap */
+  100% {
+    content: "(;;•_•)";
+  }
+}
+
+/* Rotor Glif U+2731 (Heavy Asterisk / Cool Mode) */
+.ac-rotor {
+  display: inline-flex;
+}
+
+.ac-rotor::after {
+  content: "\2731";
+  font-size: 1em;
+  animation: coolSpin 2s linear infinite;
+}
+
+@keyframes coolSpin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+</style>

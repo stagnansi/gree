@@ -1,0 +1,21 @@
+<div style="display:flex;gap:16px;justify-content:center;">
+  <!-- ACTIVE -->
+  {{ if .PrevInSection }}
+  <a href="{{ .PrevInSection.Permalink }}"><!-- INTER ARROW --><span style="font-family: var(--font-main);">←</span>Prev Post</a>
+  
+  <!-- NONACTIVE -->
+  {{ else }}
+  <!-- INTER ARROW --><span style="font-family: var(--font-main);">←</span>Prev Post
+  {{ end }}
+
+  | <!-- SEPARATOR -->
+  
+  <!-- ACTIVE -->
+  {{ if .NextInSection }}
+  <a href="{{ .NextInSection.Permalink }}">Next Post<span style="font-family: var(--font-main);">→</span><!-- INTER ARROW --></a>
+  
+  <!-- NONACTIVE -->
+  {{ else }}
+  Next Post<!-- INTER ARROW --><span style="font-family: var(--font-main);">→</span>
+  {{ end }}
+</div>
