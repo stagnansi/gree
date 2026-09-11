@@ -1,2 +1,4 @@
-<link rel="icon" type="image/x-icon" href="/favicon.ico?v=3">
-<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=3">
+{{ with .Site.Params.favicon }}
+<link rel="icon" type="image/x-icon" href="{{ . | absURL }}?v=4" />
+<link rel="shortcut icon" type="image/x-icon" href="{{ . | absURL }}?v=4" />
+{{ end }}
