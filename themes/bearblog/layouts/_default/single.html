@@ -10,7 +10,7 @@
   {{ .Content }}
 </content>
   {{ range (.GetTerms "tags") }}
-    <a href="{{ .Permalink }}" class="mono"><span style="font-family: 'Consolas', monospace; font-size: 1.1em;">#</span>{{ replace .Page.Title " " "" | upper }}</a>
+    <a href="{{ .Permalink }}" class="mono">#{{ replace .Page.Title " " "" | upper }}</a>
   {{ end }}
 {{ if eq .Type "blog" }}
 <hr>
