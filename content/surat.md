@@ -1,10 +1,8 @@
 +++
 title = "Surat"
-menu = "main"
-weight = 30
 +++
 --- 
-👉 **[Google Drive Surat](tab:https://ggl.link/surat)**  
+👉 **[Google Drive Surat 信](tab:https://ggl.link/surat)**  
 👉 **[Template Kop Surat BKS](tab:https://ggl.link/template)**  
 👉 **[Surat Penunjukan 授权](/penunjukan)**
   

@@ -71,3 +71,16 @@ ignoreErrors = ["error-disable-taxonomy"]
       [markup.goldmark.extensions.extras]
         [markup.goldmark.extensions.extras.mark]
           enable = true
+[menu]
+  [[menu.main]]
+    name = "Always On™"
+    url = "/always-on/"
+    weight = 1
+  [[menu.main]]
+    name = "Surat"
+    url = "/surat/"
+    weight = 2
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 100

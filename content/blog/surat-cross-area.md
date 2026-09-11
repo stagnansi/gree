@@ -19,6 +19,6 @@ Seluruh proses pengambilan, pengiriman, dan pendistribusian wajib mengikuti jalu
 
 Atas perhatian dan kerja samanya, kami ucapkan terima kasih.
 
-> Download **[Surat Pemberitahuan Ketentuan Khusus Jalur Distribusi Barang.pdf](tab:https://drive.google.com/file/d/1t5BDgHqt9HkFmD61wzL8b4i8zuFpFicN/)**
+> %%**[Surat Pemberitahuan Ketentuan Khusus Jalur Distribusi Barang.pdf](tab:https://drive.google.com/file/d/1t5BDgHqt9HkFmD61wzL8b4i8zuFpFicN/)**%%
 
 — Vanessa, **Marketing Specialist Cabang Group**

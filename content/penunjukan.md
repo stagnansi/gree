@@ -1,6 +1,5 @@
 +++
 title = "Penunjukan 授权"
-menu = "main"
 [build]
   list = "never"
 +++
