@@ -15,7 +15,7 @@ Dear all,
 
 Mohon perhatian seluruh cabang terkait ==ketentuan jalur distribusi barang untuk beberapa wilayah khusus== sebagaimana tercantum dalam surat pemberitahuan terlampir.
 
-Seluruh proses pengambilan, pengiriman, dan pendistribusian wajib mengikuti jalur yang telah ditentukan. Mohon agar ketentuan ini dapat diperhatikan dan dijalankan dengan baik untuk mencegah terjadinya Cross Area.
+Seluruh proses pengambilan, pengiriman, dan pendistribusian wajib mengikuti jalur yang telah ditentukan. Mohon agar ketentuan ini dapat diperhatikan dan dijalankan dengan baik untuk mencegah terjadinya *Cross Area*.
 
 Atas perhatian dan kerja samanya, kami ucapkan terima kasih.
 

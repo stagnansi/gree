@@ -273,6 +273,7 @@ footer {
   }
 }
 
+<<<<<<< HEAD
 /* Baling Asteris Murni CSS */
 .ac-rotor-fan {
   position: relative !important;
@@ -291,6 +292,39 @@ footer {
   /* Tiap bilah adalah garis tumpul simetris tepat di tengah */
 }
 
+=======
+/* Container Rotor */
+.ac-rotor {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.2ch;
+  height: 1.2ch;
+  line-height: 1;
+  color: var(--link-color) !important;
+  /* Turunkan paksa secara visual tanpa merusak animasi baling di dalamnya */
+  transform: translateY(2px); /* atau 0.12em */
+}
+
+/* Baling Asteris Murni CSS */
+.ac-rotor-fan {
+  position: relative !important;
+  top: 2px !important; /* Tepat di poros tengah optik kurung siku [ ] */
+  width: 0.9em;
+  height: 0.9em;
+  display: inline-block;
+  transform-origin: 50% 50%;
+  animation: pureCssSpin 1s linear infinite;
+}
+
+/* 3 Bilah Silang Asteris (Garis Murni CSS) */
+.ac-rotor-fan,
+.ac-rotor-fan::before,
+.ac-rotor-fan::after {
+  /* Tiap bilah adalah garis tumpul simetris tepat di tengah */
+}
+
+>>>>>>> 98c2d4bdee3302cbc3fbefd2e7a8fc4b12af22c6
 .ac-rotor-fan span,
 .ac-rotor-fan::before,
 .ac-rotor-fan::after {
