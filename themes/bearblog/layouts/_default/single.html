@@ -11,7 +11,7 @@
   {{ .Content }}
 </content>
   {{ range (.GetTerms "tags") }}
-  <a href="{{ .Permalink }}" class="mono">#{{ replace .Page.Title " " "" | upper }}</a>
+  <a href="{{ .Permalink }}">#{{ replace .Page.Title " " "" | upper }}</a>
   {{ end }}
 {{ if eq .Type "blog" }}
 <hr>

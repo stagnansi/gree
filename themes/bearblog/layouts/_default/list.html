@@ -25,8 +25,8 @@
   {{ if not .Data.Singular }}
   <small>
       {{ range .Site.Taxonomies.tags }}
-        <a href="{{ .Page.Permalink }}" class="mono">#{{ replace .Page.Title " " "" | upper }}</a>
-      &nbsp; {{ end }}
+        <a href="{{ .Page.Permalink }}">#{{ replace .Page.Title " " "" | upper }}</a>
+      {{ end }}
   </small>
   {{ end }}
 </content>
