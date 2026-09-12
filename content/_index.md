@@ -1,7 +1,7 @@
 +++
 title = ""
 +++
-### Selamat datang di portal YTTA.
+### Selgagat datang di portal YTTA.
 Web ini untuk membantu mencari informasi internal dan sifatnya **CONFIDENTIAL**, maka web ini sama sekali ==bukan untuk disebarluaskan== alias khusus buat *yang tau-tau aja*. Kontak Bara untuk *feedback* mengenai web ini.
 
 > *Beli AC **Pasti Gree!** AC Berkualitas **Pasti Gree!***
