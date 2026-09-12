@@ -102,7 +102,7 @@ code {
 
 blockquote {
     border-left: 1px dashed var(--text-color);
-    color: var(--code-color);
+    color: var(--blockquote-color);
     padding-left: 20px;
     font-style: normal;
 }
@@ -110,9 +110,8 @@ blockquote {
 footer {
     padding: 0;
     text-align: left;
-    display: inline-block;
-    position: relative;
-    top: -20px;
+    display: block;
+    margin-top: -10px;
 }
 
 .title:hover {
@@ -228,6 +227,9 @@ ul.blog-posts li a:visited {
   height: 16px !important;
   animation: pureCssSpin 1.6s linear infinite;
   transform-origin: 8px 8px !important;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  will-change: transform; /* Kunci permanen layer GPU Safari */
 }
 
 /* Ketiga Bilah Rotor */
@@ -273,16 +275,14 @@ ul.blog-posts li a:visited {
   font-weight: 100;
 }
 
-summary {
-  font-weight: bold;
-}
-
-details summary:hover {
-  text-decoration: underline;
-}
-
 details summary {
   cursor: pointer;
+  font-weight: bold;
+
+  /* Menempel langsung di dalam blok parent menggunakan tanda & */
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 /* 1. Atasi judul: rapatkan antar-baris DAN rapatkan ke tanggal */
@@ -292,7 +292,7 @@ h1 {
 }
 
 h2, h3 {
-    line-height: 1.15!important;
+    line-height: 1.15 !important;
 }
 
 /* 1. Basis PC / Layar Lebar: 5 Kolom (Pas 720px) */
@@ -333,6 +333,7 @@ h2, h3 {
   .nav-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 10px 10px;
+    font-size: 0.9em;
   }
 }
 
@@ -341,6 +342,7 @@ h2, h3 {
   .nav-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px 8px;
+    font-size: 1em; /* Mengembalikan ukuran font ke default karena 2 kolom sangat lapang */
   }
 }
 
