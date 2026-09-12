@@ -13,16 +13,14 @@ slug = "2609w2-free-match-quo"
 
 | **Salesman Name** | **Count of Log ID** |
 |-------------------|:-------------------:|
-| Dicky Fernando Putra Hananto | 2 |
-| Intan Rizki Pratiwi | 11 |
-| Muhammad Agung Rachmaniar | 3 |
-| Muhammad Fikri Van Gobel | 5 |
-| **Grand Total** | 21 |
-| ==Target Penawaran 20%== | ==5== |
-| **Submitted** | **0** |
-| Kurang | 5 |
-
-<br>
+| Dicky Fernando Putra Hananto | %%2%% |
+| Intan Rizki Pratiwi | %%11%% |
+| Muhammad Agung Rachmaniar | %%3%% |
+| Muhammad Fikri Van Gobel | %%5%% |
+| **Grand Total** | %%21%% |
+| ==Target Penawaran 20%== | ==%%5%%== |
+| **Submitted** | **%%0%%** |
+| Kurang | %%5%% |
 
 ---
 ### 1.9 — Project Log dan penawaran Free Match™ minimal capai 20% dari total Project Log

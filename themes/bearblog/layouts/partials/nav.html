@@ -1,5 +1,14 @@
-{{- range .Site.Menus.main -}}
-  {{- if ne .Name "Home" -}}
-    <a href="{{ .URL }}" class="mono">{{ .Name }}</a>
+<hr>
+<div style="display: flex; gap: 14px;">
+  {{- $first := true -}}
+  {{- range .Site.Menus.main -}}
+    {{- if ne .Name "Home" -}}
+      {{- if not $first -}}
+        <span style="user-select: none;">/</span>
+      {{- end -}}
+      <a href="{{ .URL }}" class="mono" style="margin: 0;">{{ .Name }}</a>
+      {{- $first = false -}}
+    {{- end -}}
   {{- end -}}
-{{- end -}}
+</div>
+<hr>

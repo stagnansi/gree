@@ -13,6 +13,6 @@ tags = ["link","sku","konten"]
 ---
 Dear all,  
 
-Berikut Link ==%%SKU GTA-ACOOL5%%== [https://drive.google.com/drive/folders/1cXdS_c8Ys4ifrptjfWhVDUwvhcsqU2gB](tab:https://drive.google.com/drive/folders/1cXdS_c8Ys4ifrptjfWhVDUwvhcsqU2gB/).
+Berikut Link SKU `GTA-ACOOL5` [https://drive.google.com/drive/folders/1cXdS_c8Ys4ifrptjfWhVDUwvhcsqU2gB](tab:https://drive.google.com/drive/folders/1cXdS_c8Ys4ifrptjfWhVDUwvhcsqU2gB/).
 
 — Tazqi Gifardi, **MS Only**

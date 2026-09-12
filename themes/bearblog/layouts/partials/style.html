@@ -1,157 +1,167 @@
 <style>
 :root {
-    --width: 720px;
-    --font-main: -apple-system, BlinkMacSystemFont, "Inter Display", Inter, sans-serif;
-    --font-secondary: -apple-system, BlinkMacSystemFont, Inter, sans-serif;
-    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, "IBM Plex Mono", Courier, monospace;
-    --font-scale: 1em;
-    --background-color: #fff;
-    --heading-color: #000;
-    --text-color: #000;
-    --link-color: #0000ff;
-    --visited-color:  #0000ff;
-    --code-background-color: #f2f2f2;
-    --code-color: #000;
-    --blockquote-color: #000;
-    --font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
-    --border-color: #000;
+  --width: 720px;
+  --font-main: -apple-system, BlinkMacSystemFont, "Inter Display", Inter,
+    sans-serif;
+  --font-secondary: -apple-system, BlinkMacSystemFont, Inter, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, "IBM Plex Mono",
+    Courier, monospace;
+  --font-scale: 1em;
+  --background-color: #fff;
+  --heading-color: #000;
+  --text-color: #000;
+  --link-color: #0000ff;
+  --visited-color: #0000ff;
+  --code-background-color: #f2f2f2;
+  --code-color: #000;
+  --blockquote-color: #000;
+  --font-feature-settings: "liga" 1, "calt" 1; /* fix for Chrome */
+  --border-color: #000;
 }
 
 @supports (font-variation-settings: normal) {
-    :root {
-        --font-secondary: -apple-system, BlinkMacSystemFont, InterVariable, sans-serif;
-    }
+  :root {
+    --font-secondary: -apple-system, BlinkMacSystemFont, InterVariable,
+      sans-serif;
+  }
 }
 
 body {
-    font-family: var(--font-secondary);
-    font-size: var(--font-scale);
-    margin: auto;
-    padding: 20px;
-    max-width: var(--width);
-    text-align: left;
-    background-color: var(--background-color);
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    line-height: 1.5;
-    color: var(--text-color);
-    font-feature-settings: var(--font-feature-settings);
+  font-family: var(--font-secondary);
+  font-size: var(--font-scale);
+  margin: auto;
+  padding: 20px;
+  max-width: var(--width);
+  text-align: left;
+  background-color: var(--background-color);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.5;
+  color: var(--text-color);
+  font-feature-settings: var(--font-feature-settings);
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-main);
-    color: var(--heading-color);
-    margin-bottom: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-main);
+  color: var(--heading-color);
+  margin-block: 0.5rem; /* Jarak atas & bawah persis 1x jeda paragraf biasa */
+  margin-bottom: -10px;
 }
 
 a {
-    color: var(--link-color);
-    cursor: pointer;
-    text-decoration: none;
+  color: var(--link-color);
+  cursor: pointer;
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline; 
+  text-decoration: underline;
 }
 
 nav a {
-    margin-right: 8px;
+  margin-right: 8px;
 }
 
-strong, b {
-    color: var(--heading-color);
+strong,
+b {
+  color: var(--heading-color);
 }
 
 button {
-    margin: 0;
-    cursor: pointer;
+  margin: 0;
+  cursor: pointer;
 }
 
 time {
-    font-family: var(--font-mono);
-    font-style: normal;
-    font-size: 0.9em;
+  font-family: var(--font-mono);
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--font-scale);
 }
 
 main {
-    line-height: 1.6;
+  line-height: 1.6;
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse; /* Wajib: menyatukan border jadi 1 garis tipis (single line) */
-    margin: 1.5em 0;
+  width: 100%;
+  border-collapse: collapse; /* Wajib: menyatukan border jadi 1 garis tipis (single line) */
+  margin-top: 0.6em;
+  margin-bottom: 1.5em;
 }
 
 hr {
-    border: 0;
-    border-top: 1px dashed;
+  border: 0;
+  border-top: 1px dashed;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 code {
-    font-family: var(--font-mono);
-    padding: 2px;
-    background-color: var(--code-background-color);
-    color: var(--code-color);
-    border-radius: 3px;
+  font-family: var(--font-mono);
+  padding: 2px;
+  background-color: var(--code-background-color);
+  color: var(--code-color);
+  border-radius: 3px;
 }
 
 blockquote {
-    border-left: 1px solid #999;
-    color: var(--blockquote-color);
-    padding-left: 20px;
-    font-style: normal;
+  border-left: 1px solid #999;
+  color: var(--blockquote-color);
+  padding-left: 20px;
+  font-style: normal;
 }
 
 footer {
-    padding: 25px 0;
-    text-align: left;
-    margin-top: -50px;
+  padding: 25px 0;
+  text-align: left;
 }
 
 .title:hover {
-    text-decoration: none;
-}
-
-.title h1 {
-    font-size: 1.5em;
+  text-decoration: none;
 }
 
 .inline {
-    width: auto !important;
+  width: auto !important;
 }
 
-.highlight, .code {
-    padding: 1px 15px;
-    background-color: var(--code-background-color);
-    color: var(--code-color);
-    border-radius: 3px;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    overflow-x: auto;
+.highlight,
+.code, pre {
+  padding: 15px 15px;
+  background-color: var(--code-background-color);
+  color: var(--code-color);
+  border-radius: 3px;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  overflow-x: auto;
 }
 
 /* blog post list */
 ul.blog-posts {
-    list-style-type: none;
-    padding: unset;
+  list-style-type: none;
+  padding: unset;
+  font-family: var(--font-mono);
+  font-weight: bold;
 }
 
 ul.blog-posts li {
-    display: flex;
+  display: flex;
 }
 
 ul.blog-posts li span {
-    flex: 0 0 130px;
+  flex: 0 0 130px;
 }
 
 ul.blog-posts li a:visited {
-    color: var(--visited-color);
+  color: var(--visited-color);
 }
 
 /* Kaomoji: Durasi Santai 3.2s Sinkron dengan Suhu */
@@ -258,43 +268,86 @@ ul.blog-posts li a:visited {
 }
 
 @keyframes pureCssSpin {
-  from { transform: rotate(0deg); }
-  to   { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* Custom */
-.upvote-button {
-  display: none!important;
-}
-
-footer a {
+summary {
   font-weight: bold;
-}
-
-details summary {
-  cursor: pointer;
 }
 
 details summary:hover {
   text-decoration: underline;
 }
 
-details[open] summary {
-  margin-bottom: 0.75rem;
+/* Atur jarak tepat di bawah judul summary */
+details summary {
+  cursor: pointer;
+  padding-bottom: 0 !important;
+  margin-left: -0.9rem; /* Wajib SAMA dengan nilai padding-left di atas (versi minus) */
+}
+
+/* Kunci margin paragraf Hugo di dalam details */
+details p,
+details > p {
+  margin-top: 0 !important;       /* Hapus spasi kosong di atas jawaban */
+  margin-bottom: 6px !important;  /* Atur jarak jawaban ke garis bawah di sini */
+}
+
+/* Dorong seluruh isi details (termasuk teks jawaban) ke kanan */
+details {
+  padding-left: 0.9rem; /* Geser konten agar sejajar teks judul */
 }
 
 .mono {
   font-family: var(--font-mono);
 }
 
-th, td {
-    border: 1px solid var(--border-color); /* Garis tunggal yang saling melebur */
-    padding: 8px 12px;
-    text-align: left;
+th,
+td {
+  border: 1px solid var(--border-color); /* Garis tunggal yang saling melebur */
+  padding: 8px 12px;
+  text-align: left;
 }
 
 th {
-    color: var(--heading-color);
-    font-weight: 600;
+  color: var(--heading-color);
+  font-weight: 600;
+}
+
+.proud {
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  font-weight: normal;
+}
+
+footer h5 {
+  margin-top: -1.5em;
+}
+
+.sub-list {
+  margin-left: 24px;
+}
+
+.sub-list ol {
+  padding-left: 0; /* Membuang spasi 40px bawaan browser */
+  list-style-position: inside; /* Mengunci angka 1., 2. rata kiri sejajar heading */
+}
+
+.title h2 {
+  margin-bottom: 1px;
+}
+
+/* HANYA kena ke teks code di bawah tabel, artikel/paragraf lain TIDAK AKAN tersentuh */
+table + p {
+  margin-top: -15px !important;    /* Atur jarak mepet ke tabel */
+  margin-bottom: 0 !important;   /* Pangkas habis jarak ke garis/elemen bawah */
+  line-height: 1.2 !important;
 }
 </style>
