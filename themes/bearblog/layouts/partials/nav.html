@@ -1,13 +1,17 @@
 <hr>
+{{/* 1. Cari jumlah karakter menu terpanjang */}}
+{{- $maxLen := 0 -}}
+{{- range .Site.Menus.main -}}
+  {{- if and (ne .Name "Home") (gt (len .Name) $maxLen) -}}
+    {{- $maxLen = len .Name -}}
+  {{- end -}}
+{{- end -}}
+
+{{/* 2. Terapkan $maxLen ke setiap link */}}
 <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:center;">
-  {{- $first := true -}}
   {{- range .Site.Menus.main -}}
     {{- if ne .Name "Home" -}}
-      {{- if not $first -}}
-        <span style="user-select: none;">&#10033;</span>
-      {{- end -}}
-      <a href="{{ .URL }}" class="mono" style="margin:0;font-weight:600;">{{ .Name }}</a>
-      {{- $first = false -}}
+      <span><b>[</b><a href="{{ .URL }}" style="display:inline-block;min-width:{{ $maxLen }}ch;text-align:center;margin:0;font-weight:600;">{{ .Name }}</a><b>]</b></span>
     {{- end -}}
   {{- end -}}
 </div>

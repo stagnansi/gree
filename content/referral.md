@@ -15,7 +15,7 @@ Program rekrutmen internal **Gree × FLiFE**. Ajak teman kerja bareng, dapat *cu
 | Staff & Executive Level | ==Rp250.000== |
 | Promotor Level | ==Rp150.000== |
 
-> **Bebas ajak sebanyak-banyaknya!** Greemily diperbolehkan merekomendasikan lebih dari 1 orang teman.
+`Bebas ajak sebanyak-banyaknya! Greemily diperbolehkan merekomendasikan lebih dari 1 orang teman.`
 
 ---
 

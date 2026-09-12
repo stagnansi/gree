@@ -14,4 +14,4 @@ Dear all,
 
 Untuk POP dan material lainnya yang ada ==Jackie Chan==, tolong ditake out dari toko ya, karena kontraknya sudah berakhir. Ini takeout juga ya ==Powered by Gree==, Gree sama FLIFE **gak boleh barengan lagi**, udah berpisah. Yang udah dicabutin tolong kirim fotonya ke saya. Makasih.
 
-— Bara, **GREE Promoter Bekasi**
+* Bara, **GREE Promoter Bekasi**
