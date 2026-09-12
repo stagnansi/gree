@@ -1,217 +1,189 @@
 <style>
-@import url("https://rsms.me/inter/inter.css");
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
-
 :root {
-  --width: 720px;
-  --font-main: -apple-system, BlinkMacSystemFont, "Inter Display", sans-serif;
-  --font-secondary: -apple-system, BlinkMacSystemFont, Inter, sans-serif;
-  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
-  --font-scale: 1em;
-  --background-color: #fff;
-  --heading-color: #000;
-  --text-color: #000;
-  --link-color: #0000ff;
-  --visited-color: #0000ff;
-  --code-background-color: #f2f2f2;
-  --code-color: #222;
-  --blockquote-color: #000;
+    --width: 720px;
+    --font-main: -apple-system, BlinkMacSystemFont, "Inter Display", Inter, sans-serif;
+    --font-secondary: -apple-system, BlinkMacSystemFont, Inter, sans-serif;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, "IBM Plex Mono", Courier, monospace;
+    --font-scale: 1em;
+    --background-color: #fff;
+    --heading-color: #000;
+    --text-color: #000;
+    --link-color: #0000ff;
+    --visited-color:  #0000ff;
+    --code-background-color: #f2f2f2;
+    --code-color: #000;
+    --blockquote-color: #000;
+    --font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+    --border-color: #000;
+}
+
+@supports (font-variation-settings: normal) {
+    :root {
+        --font-secondary: -apple-system, BlinkMacSystemFont, InterVariable, sans-serif;
+    }
 }
 
 body {
-  font-family: var(--font-secondary);
-  font-size: var(--font-scale);
-  margin: auto;
-  padding: 20px;
-  max-width: var(--width);
-  text-align: left;
-  background-color: var(--background-color);
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  line-height: 1.5;
-  color: var(--text-color);
-  overflow-x: hidden;
+    font-family: var(--font-secondary);
+    font-size: var(--font-scale);
+    margin: auto;
+    padding: 20px;
+    max-width: var(--width);
+    text-align: left;
+    background-color: var(--background-color);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: var(--text-color);
+    font-feature-settings: var(--font-feature-settings);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-main);
-  color: var(--heading-color);
-  margin-bottom: 0.25rem !important;
-  line-height: 1.15 !important;
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-main);
+    color: var(--heading-color);
+    margin-bottom: 0;
 }
 
 a {
-  color: var(--link-color);
-  cursor: pointer;
-  text-decoration: none;
+    color: var(--link-color);
+    cursor: pointer;
+    text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+    text-decoration: underline; 
 }
 
 nav a {
-  margin-right: 8px;
+    margin-right: 8px;
 }
 
-strong,
-b {
-  color: var(--heading-color);
+strong, b {
+    color: var(--heading-color);
 }
 
 button {
-  margin: 0;
-  cursor: pointer;
+    margin: 0;
+    cursor: pointer;
 }
 
 time {
-  font-family: var(--font-mono);
-  font-style: normal;
-  font-size: 15px;
+    font-family: var(--font-mono);
+    font-style: normal;
+    font-size: 0.9em;
 }
 
 main {
-  line-height: 1.6;
+    line-height: 1.6;
 }
 
 table {
-  width: 100%;
-  font-family: var(--font-mono);
-  border-collapse: collapse;
-}
-
-th,
-td {
-  border: 1px solid;
-  padding: 5px;
-  vertical-align: top;
+    width: 100%;
+    border-collapse: collapse; /* Wajib: menyatukan border jadi 1 garis tipis (single line) */
+    margin: 1.5em 0;
 }
 
 hr {
-  border: 0;
-  border-top: 1px dashed;
+    border: 0;
+    border-top: 1px dashed;
 }
 
 img {
-  max-width: 100%;
-  -webkit-user-drag: none;
+    max-width: 100%;
+    height: auto;
 }
 
 code {
-  font-family: var(--font-mono);
-  padding: 2px;
-  background-color: var(--code-background-color);
-  color: var(--code-color);
-  border-radius: 3px;
+    font-family: var(--font-mono);
+    padding: 2px;
+    background-color: var(--code-background-color);
+    color: var(--code-color);
+    border-radius: 3px;
 }
 
 blockquote {
-  border-left: 1px solid #999;
-  color: var(--blockquote-color);
-  padding-left: 20px;
+    border-left: 1px solid #999;
+    color: var(--blockquote-color);
+    padding-left: 20px;
+    font-style: normal;
+}
+
+footer {
+    padding: 25px 0;
+    text-align: left;
+    margin-top: -50px;
 }
 
 .title:hover {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .title h1 {
-  font-size: 1.5em;
+    font-size: 1.5em;
 }
 
 .inline {
-  width: auto !important;
+    width: auto !important;
 }
 
-.highlight,
-.code,
-pre {
-  padding: 15px 15px;
-  background-color: var(--code-background-color);
-  color: var(--code-color);
-  border-radius: 3px;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  overflow-x: auto;
-}
-
-pre code {
-  padding: 0;
-  line-height: 125%;
+.highlight, .code {
+    padding: 1px 15px;
+    background-color: var(--code-background-color);
+    color: var(--code-color);
+    border-radius: 3px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    overflow-x: auto;
 }
 
 /* blog post list */
 ul.blog-posts {
-  list-style-type: none;
-  padding: unset;
+    list-style-type: none;
+    padding: unset;
 }
 
 ul.blog-posts li {
-  display: flex;
+    display: flex;
 }
 
 ul.blog-posts li span {
-  flex: 0 0 130px;
+    flex: 0 0 130px;
 }
 
 ul.blog-posts li a:visited {
-  color: var(--visited-color);
+    color: var(--visited-color);
 }
 
-.mono {
-  font-family: var(--font-mono);
+/* Kaomoji: Durasi Santai 3.2s Sinkron dengan Suhu */
+
+.ac-kao::after {
+  content: "(;; •_•)";
+  animation: kaoCycleSantai 3.2s infinite steps(1);
 }
 
-/* SESUDAH (Rata kiri sempurna sejajar dengan judul Gree® BKS) */
-header nav {
-  margin-left: 0 !important;
-  padding-left: 0 !important;
+@keyframes kaoCycleSantai {
+  0%,
+  24% {
+    content: "(;;•_•)";
+  } /* 30°C: Gerah berkeringat */
+  25%,
+  49% {
+    content: "(·_·; )";
+  } /* 26°C: Mulai berhembus */
+  50%,
+  74% {
+    content: "(-_-; )";
+  } /* 21°C: Udara dingin menyelimuti */
+  75%,
+  99% {
+    content: "(*^-^)b";
+  } /* 16°C: Sejuk stabil, jempol mantap */
+  100% {
+    content: "(;;•_•)";
+  }
 }
 
-/* Merapatkan jarak tanggal di bawah judul */
-main h1 + p,
-main h1 + time,
-main h1 + em,
-article header p {
-  margin-top: 0 !important;
-  margin-bottom: 1rem !important;
-}
-
-/* 1. Hilangkan dorongan tinggi paksa pada halaman */
-html,
-body {
-  min-height: auto !important;
-  height: auto !important;
-}
-
-/* 2. Matikan margin bawah berlebih pada kontainer utama di semua page */
-main,
-article,
-#content,
-.content {
-  margin-bottom: 1rem !important;
-  padding-bottom: 0 !important;
-}
-
-/* 3. Rapatkan elemen terakhir di dalam konten (paragraf, hr, tag, list) */
-main > *:last-child,
-article > *:last-child {
-  margin-bottom: 0.5rem !important;
-}
-
-/* 4. Tarik footer agar menempel kompak ke konten di atasnya */
-footer {
-  margin-top: -0.5rem !important;
-  padding-top: 0 !important;
-  padding-bottom: 1.5rem !important;
-}
-
-/* 1. Suhu Digital: Durasi Santai 3.2s (4-Phase Jump) */
+/* Suhu: Durasi Santai 3.2s (4-Phase Jump) */
 .ac-temp {
   font-variant-numeric: tabular-nums;
   min-width: 3.8ch;
@@ -245,89 +217,58 @@ footer {
   }
 }
 
-/* 2. Kaomoji Dinamis: Durasi Santai 3.2s Sinkron dengan Suhu */
-
-.ac-kao::after {
-  content: "(;; •_•)";
-  animation: kaoCycleSantai 3.2s infinite steps(1);
-}
-
-@keyframes kaoCycleSantai {
-  0%,
-  24% {
-    content: "(;;•_•)";
-  } /* 30°C: Gerah berkeringat */
-  25%,
-  49% {
-    content: "(·_·; )";
-  } /* 26°C: Mulai berhembus */
-  50%,
-  74% {
-    content: "(-_-; )";
-  } /* 21°C: Udara dingin menyelimuti */
-  75%,
-  99% {
-    content: "(*^-^)b";
-  } /* 16°C: Sejuk stabil, jempol mantap */
-  100% {
-    content: "(;;•_•)";
-  }
-}
-
-/* Container Rotor */
-.ac-rotor {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 1.2ch;
-  height: 1.2ch;
-  line-height: 1;
-  color: var(--link-color) !important;
-  transform: translateY(2px);
-}
-
-/* Baling Asteris Murni CSS */
-.ac-rotor-fan {
+/* Baling Asteris */
+.rotor {
   position: relative !important;
   top: 2px !important;
   width: 0.9em;
   height: 0.9em;
   display: inline-block;
-  transform-origin: 50% 50%;
-  animation: pureCssSpin 1s linear infinite;
+  transform-origin: center center;
+  animation: pureCssSpin 1.6s linear infinite;
+  will-change: transform; /* Optimasi sub-pixel rendering agar tidak goyang */
 }
 
-.ac-rotor-fan span,
-.ac-rotor-fan::before,
-.ac-rotor-fan::after {
+.rotor span,
+.rotor::before,
+.rotor::after {
   content: "";
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 50%;
-  width: 2.2px;
+  width: 2.5px; /* Ketebalan bilah */
   height: 100%;
-  margin-left: -1.1px;
   background-color: currentColor;
+  transform-origin: center center;
 }
 
 /* Bilah 1: Vertikal (0°) */
-.ac-rotor-fan span {
-  transform: rotate(0deg);
+.rotor span {
+  transform: translate(-50%, -50%) rotate(0deg);
 }
 
 /* Bilah 2: Diagonal Kanan (60°) */
-.ac-rotor-fan::before {
-  transform: rotate(60deg);
+.rotor::before {
+  transform: translate(-50%, -50%) rotate(60deg);
 }
 
 /* Bilah 3: Diagonal Kiri (120°) */
-.ac-rotor-fan::after {
-  transform: rotate(120deg);
+.rotor::after {
+  transform: translate(-50%, -50%) rotate(120deg);
 }
 
 @keyframes pureCssSpin {
   from { transform: rotate(0deg); }
   to   { transform: rotate(360deg); }
+}
+
+/* Custom */
+.upvote-button {
+  display: none!important;
+}
+
+footer a {
+  font-weight: bold;
 }
 
 details summary {
@@ -340,5 +281,20 @@ details summary:hover {
 
 details[open] summary {
   margin-bottom: 0.75rem;
+}
+
+.mono {
+  font-family: var(--font-mono);
+}
+
+th, td {
+    border: 1px solid var(--border-color); /* Garis tunggal yang saling melebur */
+    padding: 8px 12px;
+    text-align: left;
+}
+
+th {
+    color: var(--heading-color);
+    font-weight: 600;
 }
 </style>

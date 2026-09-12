@@ -27,7 +27,6 @@
       {{ range .Site.Taxonomies.tags }}
         <a href="{{ .Page.Permalink }}" class="mono">#{{ replace .Page.Title " " "" | upper }}</a>
       &nbsp; {{ end }}
-    <hr>
   </small>
   {{ end }}
 </content>

@@ -1,5 +1,5 @@
 {{- range .Site.Menus.main -}}
   {{- if ne .Name "Home" -}}
-    <a href="{{ .URL }}">{{ .Name }}</a>
+    <a href="{{ .URL }}" class="mono">{{ .Name }}</a>
   {{- end -}}
 {{- end -}}

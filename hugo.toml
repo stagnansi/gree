@@ -73,13 +73,17 @@ ignoreErrors = ["error-disable-taxonomy"]
           enable = true
 [menu]
   [[menu.main]]
-    name = "Always On™"
-    url = "/always-on/"
-    weight = 1
+    name = "Katalog"
+    url = "/katalog/"
+    weight = 97
   [[menu.main]]
     name = "Surat"
     url = "/surat/"
-    weight = 2
+    weight = 98
+  [[menu.main]]
+    name = "24/7"
+    url = "/always-on/"
+    weight = 99
   [[menu.main]]
     name = "Blog"
     url = "/blog/"
