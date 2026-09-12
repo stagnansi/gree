@@ -18,7 +18,7 @@ slug = "2609w2-free-match-quo"
 | ==Target Penawaran 20%== | ==5== |
 | *Submitted* | *0* |
 | ==Kurang== | ==5== |
-## 1.9 — Project Log dan penawaran Free Match™ minimal capai 20% dari total Project Log
+### 1.9 — Project Log dan penawaran Free Match™ minimal capai 20% dari total Project Log
 * **Persyaratan**: Setiap cabang harus melakukan list semua informasi project (yang masih tahap proses penawaran / *spec-in*) dan minimal dari total tersebut harus ada ==20% penawaran Free Match™==. Kemudian harus dilampirkan juga bukti surat penawaran Free Match™.
 * **Note**: Diharapkan ==tidak manipulasi data==, jika ditemukan, maka ==*punish* dikalikan 10x lipat== dari *punishment* yang sudah ditetapkan. Dan untuk 20%-nya akan dihitung berdasarkan acuan total project bulan September 2026.
 * **Deadline**: 17 & 30 September 2026.
