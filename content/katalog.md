@@ -1,11 +1,11 @@
 +++
 title = "Katalog & Flyer 产品目录和宣传单"
 +++
-👉 [Google Drive Katalog 编目](tab:https://ggl.link/catalog)  
-👉 [Google Drive Flyer 传单](tab:https://ggl.link/flyer)  
+👉 [Google Drive Katalog](tab:https://ggl.link/catalog)  
+👉 [Google Drive Flyer](tab:https://ggl.link/flyer)  
 
 ---
-## ==Katalog 编目==
+## ==Katalog== 编目
 1. [Free Match™](tab:https://ggl.link/freematch)
 2. [GMV™](tab:https://ggl.link/katalog-gmv)
 3. [Gree 2026](tab:https://ggl.link/katalog26)
@@ -15,7 +15,7 @@ title = "Katalog & Flyer 产品目录和宣传单"
 7. FLiFE® RAC+HA tidak ada katalog
 
 ---
-## ==Flyer 传单==
+## ==Flyer== 传单
 ### FLiFE®
 
 1. [FTA-ACOOL4](tab:https://drive.google.com/file/d/1EVrDZbXWgnKS9qkNUv0YwS90rihjhcI-/)

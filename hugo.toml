@@ -73,17 +73,37 @@ ignoreErrors = ["error-disable-taxonomy"]
           enable = true
 [menu]
   [[menu.main]]
+    name = "Compro"
+    url = "/compro/"
+    weight = 70
+  [[menu.main]]
+    name = "Birthday"
+    url = "/birthday/"
+    weight = 75
+  [[menu.main]]
+    name = "Installer"
+    url = "/installer/"
+    weight = 79
+  [[menu.main]]
     name = "Katalog"
     url = "/katalog/"
-    weight = 97
+    weight = 80
+  [[menu.main]]
+    name = "Sertifikat"
+    url = "/sertifikat/"
+    weight = 85
   [[menu.main]]
     name = "Surat"
     url = "/surat/"
-    weight = 98
+    weight = 90
+  [[menu.main]]
+    name = "Referral"
+    url = "/referral/"
+    weight = 94
   [[menu.main]]
     name = "24/7"
     url = "/always-on/"
-    weight = 99
+    weight = 95
   [[menu.main]]
     name = "Blog"
     url = "/blog/"

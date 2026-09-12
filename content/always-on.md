@@ -1,10 +1,10 @@
 +++
 title = "Always On™"
 +++
-👉 [Google Drive Always On 常开](tab:https://ggl.link/always-on)
+👉 [Google Drive Always On](tab:https://ggl.link/always-on)
 
 ---
-## ==Always On™ 24/7==
+## ==Always On™== 24/7 常开
 | Hotline     | Nomor Telepon                                    |
 |-------------|--------------------------------------------------|
 | Bebas Pulsa | [0800-1777-888](tab:tel:0800-1777-888)           |
