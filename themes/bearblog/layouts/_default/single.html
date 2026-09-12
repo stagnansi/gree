@@ -4,7 +4,9 @@
 <time datetime='{{ .Date.Format "2006-01-02" }}'>{{ .Date.Format (default "02 Jan, 2006" .Site.Params.dateFormat) }}</time>
 {{ end }}
 {{ end }}
-<hr>
+{{ if eq .Type "blog" }}
+<div style="margin-bottom:24px;"></div><hr>
+{{ end }}
 <content>
   {{ .Content }}
 </content>
