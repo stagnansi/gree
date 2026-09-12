@@ -2,7 +2,7 @@
 <div class="nav-grid">
   {{- range .Site.Menus.main -}}
     {{- if ne .Name "Home" -}}
-      <span class="nav-item">[<a href="{{ .URL }}">{{ .Name }}</a>]</span>
+      <span class="nav-item"><b class="kurung">[</b><a href="{{ .URL }}">{{ .Name | upper }}</a><b class="kurung">]</b></span>
     {{- end -}}
   {{- end -}}
 </div>

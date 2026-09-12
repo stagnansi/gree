@@ -309,7 +309,6 @@ h2, h3 {
   display: flex;
   align-items: center;
   width: 100%;
-  user-select: none;
 }
 
 /* Tag Link: menghisap ruang sisa di dalam kurung */
@@ -317,8 +316,7 @@ h2, h3 {
   flex: 1;
   text-align: center;
   margin: 0;
-  font-weight: 600;
-  text-decoration: none;
+  font-weight: bold;
   white-space: nowrap;
 }
 
@@ -344,5 +342,10 @@ h2, h3 {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px 8px;
   }
+}
+
+ul {
+  list-style-type: "— ";  /* Em dash diikuti satu spasi */
+  padding-left: 1.5em;
 }
 </style>
