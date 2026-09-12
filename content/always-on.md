@@ -10,7 +10,7 @@ title = "Always On™"
 | Bebas Pulsa | [0800-1777-888](tab:tel:0800-1777-888)           |
 | WA Gree®    | [0812-8888-1171](tab:https://wa.me/6281288881171) |
 | WA FLiFE®   | [0811-9746-636](tab:https://wa.me/628119746636) |
-### ==FAQ (*Frequently Asked Question*)==
+### FAQ (*Frequently Asked Question*)
 <details>
   <summary>Apa itu program Layanan Pelanggan Gree 24/7 Always On Service?</summary>
 

@@ -23,7 +23,7 @@ slug = "2609w2-free-match-quo"
 * **Persyaratan**: Setiap cabang harus melakukan list semua informasi project (yang masih tahap proses penawaran / *spec-in*) dan minimal dari total tersebut harus ada ==20% penawaran Free Match™==. Kemudian harus dilampirkan juga bukti surat penawaran Free Match™.
 * **Note**: Diharapkan ==tidak manipulasi data==, jika ditemukan, maka ==*punish* dikalikan 10x lipat== dari *punishment* yang sudah ditetapkan. Dan untuk 20%-nya akan dihitung berdasarkan acuan total project bulan September 2026.
 * **Deadline**: 17 & 30 September 2026.
-* **Penalty**: ==Rp500.000== (BM) & ==Rp500.000== (SPV Sales), & ==Rp1.000.000== (Tim Sales, *punishment* dibagi oleh BM) untuk penyelesaian yang tidak berhasil dan tidak memenuhi persyaratan.
+* **Penalty**: ==Rp500.000== (BM), ==Rp500.000== (SPV Sales), dan ==Rp1.000.000== (Tim Sales, *punishment* dibagi oleh BM) untuk penyelesaian yang tidak berhasil dan tidak memenuhi persyaratan.
 ---
 * **要求**: 每个分公司必须列 所有项目资料（仍处于报价阶段 / 规格导入阶段），并且在总数中至少有 20%为Free Match™ 报价。同时还必须附上Free Match™ 报价单作为证明。
 * **备注**: 严禁数据造假，如经发现，将按照既定处罚标准的 10 倍进行处罚. 另外，20%的部分将根据 2026 年 8 月份项目总额作为计算依据
