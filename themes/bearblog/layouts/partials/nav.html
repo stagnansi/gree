@@ -4,11 +4,10 @@
   {{- range .Site.Menus.main -}}
     {{- if ne .Name "Home" -}}
       {{- if not $first -}}
-        <span style="user-select: none;">/</span>
+        <span style="user-select: none;">&#10033;</span>
       {{- end -}}
-      <a href="{{ .URL }}" class="mono" style="margin: 0;">{{ .Name }}</a>
+      <a href="{{ .URL }}" class="mono" style="margin:0;font-weight:600;">{{ .Name }}</a>
       {{- $first = false -}}
     {{- end -}}
   {{- end -}}
 </div>
-<hr>

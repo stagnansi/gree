@@ -1,9 +1,9 @@
 {{ if not (.Param "hideMadeWithLine") }}
-<h5 class="mono">
+<h5>
 	<a href="https://stagnansi.com" target="_blank" style="font-family:'Consolas',monospace;">BARA</a>
 	<span class="ac-kao"></span>&thinsp;<span class="ac-temp"></span>
 	<a href="https://stagnansi.com" target="_blank" style="font-family:'Consolas',monospace;">IM0ET</a>
-	[<span class="rotor" style="color: var(--link-color);"><span></span></span>]
+	[<span class="rotor" style="color:var(--link-color);"><span></span></span>]
 	<br>
 	<span class="proud">中国制造，深受世界喜爱。</span>
 </h5>
@@ -14,60 +14,4 @@
 		link.target = '_blank';
 		link.rel = 'noopener noreferrer';
 	});
-
-	document.querySelectorAll('main').forEach(el => {
-		// Ganti inline %%teks%%
-		el.innerHTML = el.innerHTML.replace(/%%(.*?)%%/g, '<span class="mono">$1</span>');
-
-		// Ubah tabel jika ada penanda %%table%% persis sebelum elemen tabel
-		el.innerHTML = el.innerHTML.replace(/<p>%%table%%<\/p>\s*<table>/g, '<table class="table-mono">');
-	});
-
-	document.querySelectorAll('details').forEach(el => {
-  // 1. Cari titik batas pasti penutup </summary>
-  const closeTag = '</summary>';
-  const closeIndex = el.innerHTML.indexOf(closeTag);
-  if (closeIndex === -1) return;
-
-  // Pisahkan summary dan body berdasarkan posisi tag penutup
-  const summaryHTML = el.innerHTML.slice(0, closeIndex + closeTag.length);
-  let body = el.innerHTML.slice(closeIndex + closeTag.length).trim();
-
-  // 2. Format Markdown di dalam <summary>
-  const formattedSummary = summaryHTML
-    .replace(/==(.*?)==/g, '<mark>$1</mark>')
-    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-    .replace(/(^|[^*])\*([^*]+)\*/g, '$1<em>$2</em>');
-
-  // 3. Ubah Markdown List Peluru (* item atau - item) -> <ul><li>
-  body = body.replace(/(?:^[ \t]*[-*]\s+(.*)(?:\r?\n|$))+/gm, match => {
-    const items = match.trim().split(/\r?\n/).map(line => {
-      return `<li>${line.replace(/^[ \t]*[-*]\s+/, '')}</li>`;
-    }).join('');
-    return `<ul>${items}</ul>`;
-  });
-
-  // 4. Ubah Markdown List Angka (1. item) -> <ol><li>
-  body = body.replace(/(?:^[ \t]*\d+\.\s+(.*)(?:\r?\n|$))+/gm, match => {
-    const items = match.trim().split(/\r?\n/).map(line => {
-      return `<li>${line.replace(/^[ \t]*\d+\.\s+/, '')}</li>`;
-    }).join('');
-    return `<ol>${items}</ol>`;
-  });
-
-  // 5. Format Inline pada isi konten (highlight, bold, italic)
-  body = body
-    .replace(/==(.*?)==/g, '<mark>$1</mark>')
-    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-    .replace(/(^|[^*])\*([^*]+)\*/g, '$1<em>$2</em>');
-
-  // 6. Ganti Enter fisik jadi <br> tanpa merusak tag list
-  body = body
-    .replace(/\r?\n/g, '<br>')
-    .replace(/<br>\s*(<\/?(?:ul|ol|li)>)/g, '$1')
-    .replace(/(<\/(?:ul|ol|li)>)\s*<br>/g, '$1');
-
-  // Gabungkan kembali secara presisi
-  el.innerHTML = formattedSummary + body;
-});
 </script>

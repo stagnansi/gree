@@ -1,171 +1,156 @@
 <style>
 :root {
-  --width: 720px;
-  --font-main: -apple-system, BlinkMacSystemFont, "Inter Display", Inter,
-    sans-serif;
-  --font-secondary: -apple-system, BlinkMacSystemFont, Inter, sans-serif;
-  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, "IBM Plex Mono",
-    Courier, monospace;
-  --font-scale: 1em;
-  --background-color: #fff;
-  --heading-color: #000;
-  --text-color: #000;
-  --link-color: #0000ff;
-  --visited-color: #0000ff;
-  --code-background-color: #f2f2f2;
-  --code-color: #000;
-  --blockquote-color: #000;
-  --font-feature-settings: "liga" 1, "calt" 1; /* fix for Chrome */
-  --border-color: #000;
-}
-
-@supports (font-variation-settings: normal) {
-  :root {
-    --font-secondary: -apple-system, BlinkMacSystemFont, InterVariable,
-      sans-serif;
-  }
+    --width: 720px;
+    --font-main: "IBM Plex Mono", sans-serif;
+    --font-secondary: "IBM Plex Mono", sans-serif;
+    --font-scale: 1em;
+    --background-color: #fff;
+    --heading-color: #000;
+    --text-color: #222;
+    --link-color: #0000ff;
+    --visited-color:  #0000ff;
+    --code-background-color: #f2f2f2;
+    --code-color: #000;
+    --blockquote-color: #000;
 }
 
 body {
-  font-family: var(--font-secondary);
-  font-size: var(--font-scale);
-  margin: auto;
-  padding: 20px;
-  max-width: var(--width);
-  text-align: left;
-  background-color: var(--background-color);
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  line-height: 1.5;
-  color: var(--text-color);
-  font-feature-settings: var(--font-feature-settings);
+    font-family: var(--font-secondary);
+    font-size: var(--font-scale);
+    margin: auto;
+    padding: 20px;
+    max-width: var(--width);
+    text-align: left;
+    background-color: var(--background-color);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: var(--text-color);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-main);
-  color: var(--heading-color);
-  margin-block: 0.5rem; /* Jarak atas & bawah persis 1x jeda paragraf biasa */
-  margin-bottom: -10px;
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-main);
+    color: var(--heading-color);
 }
 
 a {
-  color: var(--link-color);
-  cursor: pointer;
-  text-decoration: none;
+    color: var(--link-color);
+    cursor: pointer;
+    text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+    text-decoration: underline; 
 }
 
 nav a {
-  margin-right: 8px;
+    margin-right: 8px;
 }
 
-strong,
-b {
-  color: var(--heading-color);
+strong, b {
+    color: var(--heading-color);
 }
 
 button {
-  margin: 0;
-  cursor: pointer;
+    margin: 0;
+    cursor: pointer;
 }
 
 time {
-  font-family: var(--font-mono);
+  font-family: var(--font-secondary);
   font-style: normal;
-  font-weight: normal;
-  font-size: var(--font-scale);
+  font-size: 15px;
 }
 
 main {
-  line-height: 1.6;
+    line-height: 1.6;
 }
 
 table {
-  width: 100%;
-  border-collapse: collapse; /* Wajib: menyatukan border jadi 1 garis tipis (single line) */
-  margin-top: 0.6em;
-  margin-bottom: 1.5em;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px dashed var(--text-color);
+    vertical-align: top;
+    padding: 3px 6px;
 }
 
 hr {
-  border: 0;
-  border-top: 1px dashed;
+    border: 0;
+    border-top: 1px dashed var(--text-color);
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
 }
 
 code {
-  font-family: var(--font-mono);
-  padding: 2px;
-  background-color: var(--code-background-color);
-  color: var(--code-color);
-  border-radius: 3px;
+    font-family: var(--font-main);
+    padding: 3px 6px;
+    background-color: var(--code-background-color);
+    color: var(--code-color);
+    border-radius: 0px;
 }
 
 blockquote {
-  border-left: 1px solid #999;
-  color: var(--blockquote-color);
-  padding-left: 20px;
-  font-style: normal;
+    border-left: 1px dashed var(--text-color);
+    color: var(--code-color);
+    padding-left: 20px;
+    font-style: normal;
 }
 
 footer {
-  padding: 25px 0;
-  text-align: left;
+    padding: 0;
+    text-align: left;
+    display: inline-block;
+    position: relative;
+    top: -25px;
 }
 
 .title:hover {
-  text-decoration: none;
+    text-decoration: none;
+}
+
+.title h2 {
+    margin-bottom: -3px;
 }
 
 .inline {
-  width: auto !important;
+    width: auto !important;
 }
 
-.highlight,
-.code, pre {
-  padding: 15px 15px;
-  background-color: var(--code-background-color);
-  color: var(--code-color);
-  border-radius: 3px;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  overflow-x: auto;
+.highlight, .code {
+    padding: 1px 15px;
+    background-color: var(--code-background-color);
+    color: var(--code-color);
+    border-radius: 3px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    overflow-x: auto;
 }
 
 /* blog post list */
 ul.blog-posts {
-  list-style-type: none;
-  padding: unset;
-  font-family: var(--font-mono);
-  font-weight: bold;
+    list-style-type: none;
+    padding: unset;
 }
 
 ul.blog-posts li {
-  display: flex;
+    display: flex;
 }
 
 ul.blog-posts li span {
-  flex: 0 0 130px;
+    flex: 0 0 130px;
 }
 
 ul.blog-posts li a:visited {
-  color: var(--visited-color);
+    color: var(--visited-color);
 }
 
+/* Custom */
 /* Kaomoji: Durasi Santai 3.2s Sinkron dengan Suhu */
-
 .ac-kao::after {
   content: "(;; •_•)";
   animation: kaoCycleSantai 3.2s infinite steps(1);
@@ -227,7 +212,7 @@ ul.blog-posts li a:visited {
   }
 }
 
-/* Baling Asteris */
+/* Rotor */
 .rotor {
   position: relative !important;
   top: 2px !important;
@@ -239,9 +224,7 @@ ul.blog-posts li a:visited {
   will-change: transform; /* Optimasi sub-pixel rendering agar tidak goyang */
 }
 
-.rotor span,
-.rotor::before,
-.rotor::after {
+.rotor span, .rotor::before, .rotor::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -276,7 +259,13 @@ ul.blog-posts li a:visited {
   }
 }
 
-/* Custom */
+.proud {
+  display: inline-block;
+  position: relative;
+  top: -3px;
+  font-weight: 100;
+}
+
 summary {
   font-weight: bold;
 }
@@ -285,69 +274,13 @@ details summary:hover {
   text-decoration: underline;
 }
 
-/* Atur jarak tepat di bawah judul summary */
 details summary {
   cursor: pointer;
-  padding-bottom: 0 !important;
-  margin-left: -0.9rem; /* Wajib SAMA dengan nilai padding-left di atas (versi minus) */
 }
 
-/* Kunci margin paragraf Hugo di dalam details */
-details p,
-details > p {
-  margin-top: 0 !important;       /* Hapus spasi kosong di atas jawaban */
-  margin-bottom: 6px !important;  /* Atur jarak jawaban ke garis bawah di sini */
-}
-
-/* Dorong seluruh isi details (termasuk teks jawaban) ke kanan */
-details {
-  padding-left: 0.9rem; /* Geser konten agar sejajar teks judul */
-}
-
-.mono {
-  font-family: var(--font-mono);
-}
-
-th,
-td {
-  border: 1px solid var(--border-color); /* Garis tunggal yang saling melebur */
-  padding: 8px 12px;
-  text-align: left;
-}
-
-th {
-  color: var(--heading-color);
-  font-weight: 600;
-}
-
-.proud {
-  display: inline-block;
-  position: relative;
-  top: 2px;
-  font-weight: normal;
-}
-
-footer h5 {
-  margin-top: -1.5em;
-}
-
-.sub-list {
-  margin-left: 24px;
-}
-
-.sub-list ol {
-  padding-left: 0; /* Membuang spasi 40px bawaan browser */
-  list-style-position: inside; /* Mengunci angka 1., 2. rata kiri sejajar heading */
-}
-
-.title h2 {
-  margin-bottom: 1px;
-}
-
-/* HANYA kena ke teks code di bawah tabel, artikel/paragraf lain TIDAK AKAN tersentuh */
-table + p {
-  margin-top: -15px !important;    /* Atur jarak mepet ke tabel */
-  margin-bottom: 0 !important;   /* Pangkas habis jarak ke garis/elemen bawah */
-  line-height: 1.2 !important;
+/* 1. Atasi judul: rapatkan antar-baris DAN rapatkan ke tanggal */
+h1 {
+  line-height: 1.15 !important;     /* Merapatkan baris 1 dan baris 2 judul (default tema biasanya 1.4 - 1.5) */
+  margin-bottom: 0.3rem !important; /* Menarik teks tanggal di bawahnya agar mendekat */
 }
 </style>

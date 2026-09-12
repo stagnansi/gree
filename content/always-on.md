@@ -1,17 +1,16 @@
 +++
 title = "Always On™"
 +++
-👉 %%**[Google Drive Always On™](tab:https://ggl.link/always-on)**%%
+👉 [Google Drive Always On 常开](tab:https://ggl.link/always-on)
 
 ---
 ## ==Always On™ 24/7==
-| Hotline     | Nomor Telepon                                      |
-|-------------|----------------------------------------------------|
-| Bebas Pulsa | %%[0800-1777-888](tab:tel:0800-1777-888)%%           |
-| WA Gree®    | %%[0812-8888-1171](tab:https://wa.me/081288881171)%% |
-| WA FLiFE®   | %%[0811-9746-636](tab:https://wa.me/0811-9746-636)%% |
-### ==FAQ (*Frequently Asked Question*)== / Pertanyaan yang Sering Ditanyakan
-<br>
+| Hotline     | Nomor Telepon                                    |
+|-------------|--------------------------------------------------|
+| Bebas Pulsa | [0800-1777-888](tab:tel:0800-1777-888)           |
+| WA Gree®    | [0812-8888-1171](tab:https://wa.me/6281288881171) |
+| WA FLiFE®   | [0811-9746-636](tab:https://wa.me/628119746636) |
+### ==FAQ (*Frequently Asked Question*)==
 <details>
   <summary>Apa itu program Layanan Pelanggan Gree 24/7 Always On Service?</summary>
 
@@ -22,15 +21,13 @@ title = "Always On™"
 </details>
 
 ---
-
 <details>
   <summary>Apa maksud kunjungan teknisi dalam 24 jam?</summary>
 
-  Teknisi Gree akan datang ke lokasi **maksimal 24 jam** setelah laporan diterima, dengan dukungan *call center 24 jam* dan sistem kerja *shift*, termasuk ==akhir pekan dan hari libur==.
+  Teknisi Gree akan datang ke lokasi **maksimal 24 jam** setelah laporan diterima, dengan dukungan *call center 24 jam* dan sistem kerja *shift*, ==termasuk akhir pekan dan hari libur==.
 </details>
 
 ---
-
 <details>
   <summary>Apa itu 48 Jam Dijamin Dingin?</summary>
 
@@ -38,7 +35,6 @@ title = "Always On™"
 </details>
 
 ---
-
 <details>
   <summary>Apakah layanan berlaku di seluruh Indonesia?</summary>
 
@@ -46,7 +42,6 @@ title = "Always On™"
 </details>
 
 ---
-
 <details>
   <summary>Kapan perhitungan 48 jam dimulai?</summary>
 
@@ -54,7 +49,6 @@ title = "Always On™"
 </details>
 
 ---
-
 <details>
   <summary>Kapan AC portable diberikan?</summary>
 
@@ -66,7 +60,6 @@ title = "Always On™"
 </details>
 
 ---
-
 <details>
   <summary>Kapan AC portable tidak diberikan?</summary>
 
@@ -78,7 +71,6 @@ title = "Always On™"
 </details>
 
 ---
-
 <details>
   <summary>Apakah semua lokasi bisa menggunakan AC portable?</summary>
 
@@ -89,7 +81,6 @@ title = "Always On™"
 </details>
 
 ---
-
 <details>
   <summary>Jika tidak memungkinkan, apa solusinya?</summary>
 
@@ -97,7 +88,6 @@ title = "Always On™"
 </details>
 
 ---
-
 <details>
   <summary>Berapa lama AC portable dipinjamkan?</summary>
 
@@ -105,7 +95,6 @@ title = "Always On™"
 </details>
 
 ---
-
 <details>
   <summary>Apakah ada biaya pengiriman AC portable?</summary>
 
@@ -113,7 +102,6 @@ title = "Always On™"
 </details>
 
 ---
-
 <details>
   <summary>Apakah layanan berlaku di luar kota besar?</summary>
 
@@ -123,7 +111,6 @@ title = "Always On™"
 </details>
 
 ---
-
 <details>
   <summary>Apakah semua tipe AC Gree termasuk program ini?</summary>
 
@@ -131,7 +118,6 @@ title = "Always On™"
 </details>
 
 ---
-
 <details>
   <summary>Apakah konsumen bisa memilih kapasitas AC portable?</summary>
 
@@ -139,7 +125,6 @@ title = "Always On™"
 </details>
 
 ---
-
 <details>
   <summary>Kenapa AC portable kadang kurang dingin?</summary>
 
@@ -147,7 +132,6 @@ title = "Always On™"
 </details>
 
 ---
-
 <details>
   <summary>Jika AC portable rusak, siapa yang bertanggung jawab?</summary>
 
@@ -155,7 +139,6 @@ title = "Always On™"
 </details>
 
 ---
-
 <details>
   <summary>Kota mana saja yang termasuk program ini?</summary>
 
@@ -177,7 +160,6 @@ title = "Always On™"
 </details>
 
 ---
-
 <details>
   <summary>Apakah teknisi bisa datang malam hari?</summary>
 
@@ -185,7 +167,6 @@ title = "Always On™"
 </details>
 
 ---
-
 <details>
   <summary>Jika kerusakan akibat instalasi tidak standar?</summary>
 
@@ -193,7 +174,6 @@ title = "Always On™"
 </details>
 
 ---
-
 <details>
   <summary>Apakah cuci AC termasuk 48 Jam Dijamin Dingin?</summary>
 

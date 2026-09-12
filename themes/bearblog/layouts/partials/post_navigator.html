@@ -3,9 +3,9 @@
     <span style="font-family: var(--font-main);">←&emsp;</span>{{ if .PrevInSection }}
     <a href="{{ .PrevInSection.Permalink }}">Prev Post</a>{{ else }}Prev Post{{ end }}
   </span>
-  <span>|</span>
+  <span style="user-select:none;">&#10033;</span>
   <span>{{ if .NextInSection }}
     <a href="{{ .NextInSection.Permalink }}">Next Post</a>{{ else }}Next Post{{ end }}
-    <span style="font-family: var(--font-main);">&emsp;→</span>
+    <span style="font-family:var(--font-main);user-select:none;">&emsp;→</span>
   </span>
 </div>

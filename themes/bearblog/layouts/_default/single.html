@@ -4,6 +4,7 @@
 <time datetime='{{ .Date.Format "2006-01-02" }}'>{{ .Date.Format (default "02 Jan, 2006" .Site.Params.dateFormat) }}</time>
 {{ end }}
 {{ end }}
+<hr>
 <content>
   {{ .Content }}
 </content>
@@ -12,6 +13,6 @@
   {{ end }}
 {{ if eq .Type "blog" }}
 <hr>
-<span class="mono"><b>{{ if (.Param "enablePostNavigator")}}{{- partial "post_navigator.html" . -}}</b></span>
+<span><b>{{ if (.Param "enablePostNavigator")}}{{- partial "post_navigator.html" . -}}</b></span>
 {{ end }}{{ end }}
 {{ end }}

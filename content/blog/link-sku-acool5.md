@@ -10,9 +10,8 @@ date = "2026-09-10T22:43:04+07:00"
 
 tags = ["link","sku","konten"]
 +++
----
 Dear all,  
 
-Berikut Link SKU `GTA-ACOOL5` [https://drive.google.com/drive/folders/1cXdS_c8Ys4ifrptjfWhVDUwvhcsqU2gB](tab:https://drive.google.com/drive/folders/1cXdS_c8Ys4ifrptjfWhVDUwvhcsqU2gB/).
+Berikut link SKU `GTA-ACOOL5`, [https://drive.google.com/drive/folders/1cXdS_c8Ys4ifrptjfWhVDUwvhcsqU2gB](tab:https://drive.google.com/drive/folders/1cXdS_c8Ys4ifrptjfWhVDUwvhcsqU2gB/).
 
 — Tazqi Gifardi, **MS Only**
