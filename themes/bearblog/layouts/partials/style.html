@@ -294,4 +294,55 @@ h1 {
 h2, h3 {
     line-height: 1.15!important;
 }
+
+/* 1. Basis PC / Layar Lebar: 5 Kolom (Pas 720px) */
+.nav-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Span pembungkus kurung: mengunci kurung ke ujung kolom */
+.nav-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  user-select: none;
+}
+
+/* Tag Link: menghisap ruang sisa di dalam kurung */
+.nav-item a {
+  flex: 1;
+  text-align: center;
+  margin: 0;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* 2. Layar Tablet / iPad Mini / Landscape Phone: 4 Kolom */
+@media (max-width: 660px) {
+  .nav-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px 10px;
+  }
+}
+
+/* 3. Layar Ponsel Sedang / Lebar (iPhone Pro Max, Android lega): 3 Kolom */
+@media (max-width: 540px) {
+  .nav-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px 10px;
+  }
+}
+
+/* 4. Layar Ponsel Compact (iPhone SE 3 [375px], Mini series): 2 Kolom */
+@media (max-width: 400px) {
+  .nav-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 8px;
+  }
+}
 </style>
