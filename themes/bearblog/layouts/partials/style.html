@@ -313,39 +313,54 @@ h2, h3 {
     line-height: 1.15 !important;
 }
 
-/* 1. Link Navigasi: Flexbox Murni + Teks Stretch Vertikal */
+/* 1. Basis PC / Layar Lebar: 5 Kolom (JANGAN DIHAPUS) */
+.nav-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* 2. Span Pembungkus: KUNCI AGAR '[' dan ']' SEBARIS DENGAN PANAH */
+.nav-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* 3. Link Navigasi: Rata Kiri + Menghisap Ruang Kosong */
 .nav-item a {
   flex: 1;
-  display: flex;                    /* KUNCI: Pertahankan flex, hapus inline-block */
-  align-items: center;              /* Vertikal rata tengah (middle) */
+  display: flex;
+  align-items: center;
   justify-content: flex-start;
   margin: 0;
   font-weight: bold;
   white-space: nowrap;
   text-decoration: none;
-  
-  /* Efek stretch vertikal tetap aman bekerja di flex container */
   transform: scaleY(1.2);
   transform-origin: center center;
 }
 
-/* 2. Panah Dinamis Menempel Presisi di ']' */
+/* 4. Panah Dinamis: Mulai 1 Spasi Monospace, Ujung Pas di ']' */
 .nav-item a::after {
   content: "";
-  flex: 1;                          /* Menghisap ruang sisa dari teks hingga ']' */
+  flex: 1;                          /* Menghisap sisa ruang dari teks ke ']' */
   height: 8px;                      /* Tinggi kepala panah */
   margin-left: 1ch;                 /* Jeda tepat 1 spasi monospace dari kata */
-  background-color: currentColor;   /* Warna konsisten dengan teks link */
+  background-color: currentColor;   /* Warna batang & kepala ikut warna teks */
   
-  /* Dukungan penuh WebKit (Safari iOS) & Browser Standar */
+  /* Vektor Batang 2px + Kepala Panah Runcing Menempel di Kurung */
   -webkit-clip-path: polygon(
-    0 calc(50% - 1px),                /* Batang: kiri atas (tebal 2px) */
-    calc(100% - 5px) calc(50% - 1px), /* Batang: kanan atas */
-    calc(100% - 5px) 0,               /* Sayap atas */
-    100% 50%,                         /* Ujung runcing pas di bibir ']' */
-    calc(100% - 5px) 100%,            /* Sayap bawah */
-    calc(100% - 5px) calc(50% + 1px), /* Batang: kanan bawah */
-    0 calc(50% + 1px)                 /* Batang: kiri bawah */
+    0 calc(50% - 1px),
+    calc(100% - 5px) calc(50% - 1px),
+    calc(100% - 5px) 0,
+    100% 50%,
+    calc(100% - 5px) 100%,
+    calc(100% - 5px) calc(50% + 1px),
+    0 calc(50% + 1px)
   );
   clip-path: polygon(
     0 calc(50% - 1px),
@@ -358,7 +373,11 @@ h2, h3 {
   );
 }
 
-/* 2. Layar Tablet / iPad Mini / Landscape Phone: 4 Kolom */
+/* =======================================================
+   RESPONSIF MEDIA QUERIES (3 & 2 KOLOM SUPER PADAT)
+   ======================================================= */
+
+/* Layar Tablet / Landscape Phone: 4 Kolom */
 @media (max-width: 660px) {
   .nav-grid {
     grid-template-columns: repeat(4, 1fr);
@@ -366,12 +385,12 @@ h2, h3 {
   }
 }
 
-/* 3. Layar Ponsel Sedang / Lebar (iPhone Pro Max, Android lega): 3 Kolom */
+/* Layar Ponsel Sedang: 3 Kolom */
 @media (max-width: 540px) {
   .nav-grid {
     grid-template-columns: repeat(3, 1fr);
-    row-gap: 4px !important;/* KUNCI: Baris atas-bawah langsung dirapatkan */
-    column-gap: 8px;        /* Jarak kiri-kanan tetap aman */
+    row-gap: 4px !important;
+    column-gap: 8px;
     font-size: 0.92em;
     line-height: 1;
   }
@@ -379,15 +398,15 @@ h2, h3 {
     line-height: 1;
   }
   .nav-item a {
-    padding: 2px 0;         /* Bantalan sentuh tipis agar tidak renggang */
+    padding: 2px 0;
   }
 }
 
-/* 4. Layar Ponsel Compact (iPhone SE 3 [375px], Mini series): 2 Kolom */
+/* Layar Ponsel Compact / iPhone SE 3: 2 Kolom */
 @media (max-width: 400px) {
   .nav-grid {
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 4px !important;        /* Tetap rapat, menghilangkan jurang kosong */
+    row-gap: 4px !important;
     column-gap: 8px;
     font-size: 1.1em;
     line-height: 1;
