@@ -276,20 +276,31 @@ ul.blog-posts li a:visited {
   font-weight: 100;
 }
 
+/* Keadaan Tertutup (Menghadap Kanan) */
 details summary {
   display: flex;
   align-items: flex-start;
-  gap: 8px;                         /* Jarak mutlak panah ke huruf A */
-  list-style: none;
+  gap: 8px;
   cursor: pointer;
   font-weight: bold;
+  list-style: none;
+}
 
-  &::before {
-    content: "►";                   /* Panah dimunculkan otomatis oleh CSS */
-    display: inline-block;
-    flex-shrink: 0;
-    line-height: inherit;
-  }
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary::before {
+  content: "▶";
+  display: inline-block;
+  flex-shrink: 0;
+  line-height: inherit;
+  transition: transform 0.15s ease; /* Transisi putaran cepat */
+}
+
+/* Keadaan Terbuka / Expand (Menghadap ke Bawah) */
+details[open] > summary::before {
+  transform: rotate(90deg);
 }
 
 /* 1. Atasi judul: rapatkan antar-baris DAN rapatkan ke tanggal */
