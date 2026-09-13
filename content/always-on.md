@@ -1,16 +1,23 @@
 +++
 title = "Always On™"
 +++
-👉 [Google Drive Always On](tab:https://ggl.link/always-on)
+## Always On™ 24/7 常开
 
 ---
-## ==Always On™== 24/7 常开
+<iframe width="720" height="380" src="https://www.youtube.com/embed/ViX0-Gg0uls?si=492D599pwodG6tgs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
+### ==Hotline==
 | Hotline     | Nomor Telepon                                    |
 |-------------|--------------------------------------------------|
 | Bebas Pulsa | [0800-1777-888](tab:tel:0800-1777-888)           |
 | WA Gree®    | [0812-8888-1171](tab:https://wa.me/6281288881171) |
 | WA FLiFE®   | [0811-9746-636](tab:https://wa.me/628119746636) |
-### FAQ (*Frequently Asked Question*)
+
+> - **[Google Drive Always On](tab:https://ggl.link/always-on)**
+
+---
+### ==FAQ== (*Frequently Asked Question*)
 <details>
   <summary>Apa itu program Layanan Pelanggan Gree 24/7 Always On Service?</summary>
 

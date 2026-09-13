@@ -1,33 +1,37 @@
 +++
 title = "Katalog & Flyer 产品目录和宣传单"
 +++
-👉 [Google Drive Katalog](tab:https://ggl.link/catalog)  
-👉 [Google Drive Flyer](tab:https://ggl.link/flyer)  
+## ==Katalog== 编目
 
 ---
-## ==Katalog== 编目
 1. [Free Match™](tab:https://ggl.link/freematch)
 2. [GMV™](tab:https://ggl.link/katalog-gmv)
 3. [Gree 2026](tab:https://ggl.link/katalog26)
 4. [LCAC FLiFE®](tab:https://ggl.link/lcacflife)
 5. [LCAC Gree](tab:https://ggl.link/lcacgree)
 6. [U-Match™](tab:https://ggl.link/umatch)
-7. FLiFE® RAC+HA tidak ada katalog
+7. **FLiFE® RAC+HA tidak ada katalog**
+
+---
+> - **[Google Drive Katalog](tab:https://ggl.link/catalog)**
 
 ---
 ## ==Flyer== 传单
-### FLiFE®
 
+---
+### FLiFE®
 1. [FTA-ACOOL4](tab:https://drive.google.com/file/d/1EVrDZbXWgnKS9qkNUv0YwS90rihjhcI-/)
 2. [Floor Standing](tab:https://drive.google.com/file/d/1uMMvL-9PFB8EhztwaOSg14s28eQwjSpk/)
 3. [Air Curtain](tab:https://drive.google.com/file/d/1Wd57SaubvMxV09ID-std8FWaMIjMoRb2/)
 4. [FLOO — Standard](tab:https://drive.google.com/file/d/1CUZNlVO178O_ePmTVOBp1VVoyg5yFifL/)
 5. [FMOO3 — Standard](tab:https://drive.google.com/file/d/1U5erA0e6HjH4qWFX-FKHDj-WvQhLwcFh/)
+
 ---
 ### CAC
 6. [Cold Storage](tab:https://drive.google.com/file/d/14CftvE2mBdfbhreL4mF5HGbO7Gp1XASq/)
 7. [Elevator AC](tab:https://drive.google.com/file/d/1AT4JtY3TG-zGpeHFVp8CZGXLVio5oCev/)
 8. [GMV™ S Duo](tab:https://drive.google.com/file/d/1MRCldMTHG3Ihkef5TOsvMLpRwyMU4pOq/)
+
 ---
 ### HA
 9. [ACOOL60](tab:https://drive.google.com/file/d/1wwzM8qXYkBuKee5wsJaM9L1feQ3oZazy/)
@@ -37,12 +41,14 @@ title = "Katalog & Flyer 产品目录和宣传单"
 13. [GTA-ACOOL4](tab:https://drive.google.com/file/d/19bX5A9wGf1WXxVQId8uXvHENKDK_TpB6/)
 14. [GTA-ACOOL6](tab:https://drive.google.com/file/d/1vY182yfAK9LggOoOeiWT4VtLPZRwFavy/)
 15. [Wind Green Fan™](tab:https://drive.google.com/file/d/1vDW0SBCebmzQ00QS64LNy92fH63ge4OD/)
+
 ---
-## LCAC
+### LCAC
 16. [Joy Wind™](tab:https://drive.google.com/file/d/1WvzhceIgaY4b2o-BDplxQ3k-Y7R3TL4p/)
 17. [STS — Floor Standing](tab:https://drive.google.com/file/d/1m51kO-GLlKB9DTmJSyAqD65St3doFdSp/)
+
 ---
-## RAC
+### RAC
 18. [Airy — Deluxe Inverter](tab:https://drive.google.com/file/d/1y6_A9JX6ETDkn5vbZMf8dV3rsgG9WjJj/)
 19. [Combo Split S™](tab:https://drive.google.com/file/d/1eVaNi0q2Qwkx-HSFYg9wIdZTN2tEj__v/)
 20. [F1S — Inverter](tab:https://drive.google.com/file/d/1W6bDi9ly7cjJx1vDhipErqSzkLWuiNAV/)
@@ -52,3 +58,6 @@ title = "Katalog & Flyer 产品目录和宣传单"
 24. [P1 — Portable](tab:https://drive.google.com/file/d/1BLeJT0ckQqBCuLBe0j_twFBLGufec7Ks/)
 25. [P2 — Portable](tab:https://drive.google.com/file/d/1r0joGsDtz2UZQzERgse8efCftCKLLd5b/)
 26. [Semua RAC](tab:https://drive.google.com/file/d/1c1TYSy6eyVoT_6ouot2b7kjcaVj7Wxjx/)
+
+---
+> - **[Google Drive Flyer](tab:https://ggl.link/flyer)**

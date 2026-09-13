@@ -15,49 +15,49 @@
 }
 
 body {
-    font-family: var(--font-secondary);
-    font-size: var(--font-scale);
-    margin: auto;
-    padding: 20px;
-    max-width: var(--width);
-    text-align: left;
-    background-color: var(--background-color);
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    line-height: 1.5;
-    color: var(--text-color);
+  font-family: var(--font-secondary);
+  font-size: var(--font-scale);
+  margin: auto;
+  padding: 20px;
+  max-width: var(--width);
+  text-align: left;
+  background-color: var(--background-color);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.5;
+  color: var(--text-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-main);
-    color: var(--heading-color);
+  font-family: var(--font-main);
+  color: var(--heading-color);
 }
 
 a {
-    color: var(--link-color);
-    cursor: pointer;
-    text-decoration: none;
+  color: var(--link-color);
+  cursor: pointer;
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline; 
+  text-decoration: underline; 
 }
 
 nav a {
-    margin-right: 8px;
+  margin-right: 8px;
 }
 
 nav {
-    line-height: 0.9;
+  line-height: 0.9;
 }
 
 strong, b {
-    color: var(--heading-color);
+  color: var(--heading-color);
 }
 
 button {
-    margin: 0;
-    cursor: pointer;
+  margin: 0;
+  cursor: pointer;
 }
 
 time {
@@ -67,95 +67,95 @@ time {
 }
 
 main {
-    line-height: 1.6;
+  line-height: 1.6;
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
+  width: 100%;
+  border-collapse: collapse;
 }
 
 th, td {
-    border: 1px dashed var(--text-color);
-    vertical-align: top;
-    padding: 3px 6px;
+  border: 1px dashed var(--text-color);
+  vertical-align: top;
+  padding: 3px 6px;
 }
 
 hr {
-    border: 0;
-    border-top: 1px dashed var(--text-color);
+  border: 0;
+  border-top: 1px dashed var(--text-color);
 }
 
 img {
-    max-width: 100%;
-    -webkit-user-drag: none;
-    user-select: none;
+  max-width: 100%;
+  -webkit-user-drag: none;
+  user-select: none;
 }
 
 code {
-    font-family: var(--font-main);
-    padding: 3px 0px;
-    background-color: var(--code-background-color);
-    color: var(--code-color);
-    border-radius: 0px;
+  font-family: var(--font-main);
+  padding: 3px 0px;
+  background-color: var(--code-background-color);
+  color: var(--code-color);
+  border-radius: 0px;
 }
 
 blockquote {
-    border-left: 1px dashed var(--text-color);
-    color: var(--blockquote-color);
-    padding-left: 20px;
-    font-style: normal;
+  border-left: 1px dashed var(--text-color);
+  color: var(--blockquote-color);
+  padding-left: 20px;
+  font-style: normal;
 }
 
 footer {
-    padding: 0;
-    text-align: left;
-    display: block;
-    margin-top: -10px;
+  padding: 0;
+  text-align: left;
+  display: block;
+  margin-top: -10px;
 }
 
 .title:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .title h2 {
-    margin-bottom: -3px;
+  margin-bottom: -3px;
 }
 
 .inline {
-    width: auto !important;
+  width: auto !important;
 }
 
 .highlight, .code {
-    padding: 1px 15px;
-    background-color: var(--code-background-color);
-    color: var(--code-color);
-    border-radius: 3px;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    overflow-x: auto;
+  padding: 1px 15px;
+  background-color: var(--code-background-color);
+  color: var(--code-color);
+  border-radius: 3px;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  overflow-x: auto;
 }
 
 /* blog post list */
 ul.blog-posts {
-    list-style-type: none;
-    padding: unset;
+  list-style-type: none;
+  padding: unset;
 }
 
 ul.blog-posts li {
-    display: flex;
+  display: flex;
 }
 
 ul.blog-posts li span {
-    flex: 0 0 130px;
+  flex: 0 0 130px;
 }
 
 ul.blog-posts li a:visited {
-    color: var(--visited-color);
+  color: var(--visited-color);
 }
 
-/* Custom */
-/* Kaomoji animation sama dengan Temp */
+/* custom */
+/* kaomoji */
 .ac-kao::after {
   content: "(;; •_•)";
   animation: kaoCycleSantai 3.2s infinite steps(1);
@@ -183,7 +183,7 @@ ul.blog-posts li a:visited {
   }
 }
 
-/* Temp animation sama dengan Kaomoji */
+/* temp */
 .ac-temp {
   font-variant-numeric: tabular-nums;
   min-width: 3.8ch;
@@ -217,7 +217,7 @@ ul.blog-posts li a:visited {
   }
 }
 
-/* Rotor */
+/* rotor */
 .rotor {
   position: relative !important;
   top: -1px !important;
@@ -229,32 +229,32 @@ ul.blog-posts li a:visited {
   transform-origin: 8px 8px !important;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  will-change: transform; /* Kunci permanen layer GPU Safari */
+  will-change: transform;
 }
 
-/* Bilah Rotor */
+/* bilah rotor */
 .rotor span, .rotor::before, .rotor::after {
   content: "";
   position: absolute;
   top: 2px;
   left: 7px;
-  width: 2px;                /* Ketebalan bilah */
-  height: 12px;              /* Panjang bilah */
+  width: 2px; /* tebal */
+  height: 12px; /* panjang */
   background-color: currentColor;
   transform-origin: 1px 6px;
 }
 
-/* Bilah 1: Vertikal (0°) */
+/* bilah 1 */
 .rotor span {
   transform: rotate(0deg);
 }
 
-/* Bilah 2: Diagonal Kanan (60°) */
+/* bilah 2 */
 .rotor::before {
   transform: rotate(60deg);
 }
 
-/* Bilah 3: Diagonal Kiri (120°) */
+/* bilah 3 */
 .rotor::after {
   transform: rotate(120deg);
 }
@@ -263,12 +263,13 @@ ul.blog-posts li a:visited {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-/* Made in China, Loved by the World */
+/* made in china, loved by the world. */
 .proud {
   display: inline-block;
   position: relative;
@@ -276,7 +277,7 @@ ul.blog-posts li a:visited {
   font-weight: 100;
 }
 
-/* Keadaan Tertutup (Menghadap Kanan) */
+/* details summary */
 details summary {
   display: flex;
   align-items: flex-start;
@@ -284,36 +285,48 @@ details summary {
   cursor: pointer;
   font-weight: bold;
   list-style: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+details summary:hover {
+  text-decoration: underline;
 }
 
 details summary::-webkit-details-marker {
   display: none;
 }
 
+/* triangle */
 details summary::before {
-  content: "▶";
+  content: "";
   display: inline-block;
+  width: 9px;
+  height: 11px;
+  margin-top: 0.28em;
   flex-shrink: 0;
-  line-height: inherit;
-  transition: transform 0.15s ease; /* Transisi putaran cepat */
+  background-color: currentColor;
+  -webkit-clip-path: polygon(0 0, 100% 50%, 0 100%);
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+  transition: transform 0.15s ease;
+  transform-origin: center center;
 }
 
-/* Keadaan Terbuka / Expand (Menghadap ke Bawah) */
 details[open] > summary::before {
   transform: rotate(90deg);
 }
 
-/* 1. Atasi judul: rapatkan antar-baris DAN rapatkan ke tanggal */
+/* judul blog */
 h1 {
-  line-height: 1 !important;     /* Merapatkan baris 1 dan baris 2 judul (default tema biasanya 1.4 - 1.5) */
-  margin-bottom: 3px !important; /* Menarik teks tanggal di bawahnya agar mendekat */
+  line-height: 1 !important;
+  margin-bottom: 3px !important;
 }
 
 h2, h3 {
-    line-height: 1.15 !important;
+  line-height: 1.15 !important;
 }
 
-/* 1. Basis PC / Layar Lebar: 5 Kolom (JANGAN DIHAPUS) */
+/* navigation */
 .nav-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -322,66 +335,40 @@ h2, h3 {
   box-sizing: border-box;
 }
 
-/* 2. Span Pembungkus: KUNCI AGAR '[' dan ']' SEBARIS DENGAN PANAH */
 .nav-item {
   display: flex;
   align-items: center;
   width: 100%;
-  box-sizing: border-box;
 }
 
-/* 3. Link Navigasi: Rata Kiri + Menghisap Ruang Kosong */
 .nav-item a {
   flex: 1;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
   margin: 0;
-  font-weight: bold;
+  padding: 0;
   white-space: nowrap;
   text-decoration: none;
+
+  /* stretch */
   transform: scaleY(1.2);
   transform-origin: center center;
 }
 
-/* Panah Dinamis: Batang Menghisap Ruang + Kepala Chevron Geometris Siku */
+/* emdash */
 .nav-item a::after {
   content: "";
-  flex: 1;                          /* Tetap menghisap ruang sisa dari teks hingga ']' */
-  height: 12px;                     /* Ketinggian ideal untuk rentang sayap chevron */
-  margin-left: 1ch;                 /* Jeda tepat 1 spasi monospace dari kata */
-  background-color: currentColor;   /* Warna ikut teks tautan */
-
-  /* Poligon Vektor: Batang 2px + Kepala Chevron Sayap Terbuka (Sesuai Gambar) */
-  -webkit-clip-path: polygon(
-    0 calc(50% - 1px),                   /* 1. Batang: Kiri atas (tebal 2px) */
-    calc(100% - 5px) calc(50% - 1px),    /* 2. Batang: Menembus sudut dalam chevron */
-    calc(100% - 8px) calc(50% - 4px),    /* 3. Sayap atas: Garis dalam */
-    calc(100% - 6px) calc(50% - 6px),    /* 4. Sayap atas: Ujung potongan rata (flat cap) */
-    100% 50%,                            /* 5. Ujung runcing panah tepat menempel di ']' */
-    calc(100% - 6px) calc(50% + 6px),    /* 6. Sayap bawah: Ujung potongan rata (flat cap) */
-    calc(100% - 8px) calc(50% + 4px),    /* 7. Sayap bawah: Garis dalam */
-    calc(100% - 5px) calc(50% + 1px),    /* 8. Batang: Menembus sudut dalam chevron bawah */
-    0 calc(50% + 1px)                    /* 9. Batang: Kiri bawah */
-  );
-  clip-path: polygon(
-    0 calc(50% - 1px),
-    calc(100% - 5px) calc(50% - 1px),
-    calc(100% - 8px) calc(50% - 4px),
-    calc(100% - 6px) calc(50% - 6px),
-    100% 50%,
-    calc(100% - 6px) calc(50% + 6px),
-    calc(100% - 8px) calc(50% + 4px),
-    calc(100% - 5px) calc(50% + 1px),
-    0 calc(50% + 1px)
-  );
+  flex: 1;
+  height: 1px;
+  background-color: var(--text-color);
+  margin-left: 0.5ch;
 }
 
-/* =======================================================
-   RESPONSIF MEDIA QUERIES (3 & 2 KOLOM SUPER PADAT)
-   ======================================================= */
+.nav-item a:hover {
+  text-decoration: underline;
+}
 
-/* Layar Tablet / Landscape Phone: 4 Kolom */
+/* 4 kolom */
 @media (max-width: 660px) {
   .nav-grid {
     grid-template-columns: repeat(4, 1fr);
@@ -389,7 +376,7 @@ h2, h3 {
   }
 }
 
-/* Layar Ponsel Sedang: 3 Kolom */
+/* 3 kolom */
 @media (max-width: 540px) {
   .nav-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -398,15 +385,17 @@ h2, h3 {
     font-size: 0.92em;
     line-height: 1;
   }
+
   .nav-item {
     line-height: 1;
   }
+
   .nav-item a {
     padding: 2px 0;
   }
 }
 
-/* Layar Ponsel Compact / iPhone SE 3: 2 Kolom */
+/* 2 kolom */
 @media (max-width: 400px) {
   .nav-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -415,9 +404,11 @@ h2, h3 {
     font-size: 1.1em;
     line-height: 1;
   }
+
   .nav-item {
     line-height: 1;
   }
+
   .nav-item a {
     padding: 3px 0;
   }
@@ -429,7 +420,26 @@ ul {
 }
 
 .kurung {
-    user-select: none;
-    font-weight: 600;
+  user-select: none;
+  font-weight: normal;
+}
+
+.select {
+  user-select: none;
+}
+
+.br {
+  height: 0.5em;
+}
+
+/* youtube */
+iframe[src*="youtube.com"] {
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  display: block;
+  margin: 1.5em 0;
+  border: 0;
 }
 </style>
