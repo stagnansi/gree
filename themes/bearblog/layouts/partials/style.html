@@ -155,7 +155,7 @@ ul.blog-posts li a:visited {
 }
 
 /* Custom */
-/* Kaomoji: Durasi Santai 3.2s Sinkron dengan Suhu */
+/* Kaomoji animation sama dengan Temp */
 .ac-kao::after {
   content: "(;; •_•)";
   animation: kaoCycleSantai 3.2s infinite steps(1);
@@ -165,25 +165,25 @@ ul.blog-posts li a:visited {
   0%,
   24% {
     content: "(;;•_•)";
-  } /* 30°C: Gerah berkeringat */
+  } /* 30°C */
   25%,
   49% {
     content: "(·_·; )";
-  } /* 26°C: Mulai berhembus */
+  } /* 26°C */
   50%,
   74% {
     content: "(-_-; )";
-  } /* 21°C: Udara dingin menyelimuti */
+  } /* 21°C */
   75%,
   99% {
     content: "(*^-^)b";
-  } /* 16°C: Sejuk stabil, jempol mantap */
+  } /* 16°C */
   100% {
     content: "(;;•_•)";
   }
 }
 
-/* Suhu: Durasi Santai 3.2s (4-Phase Jump) */
+/* Temp animation sama dengan Kaomoji */
 .ac-temp {
   font-variant-numeric: tabular-nums;
   min-width: 3.8ch;
@@ -217,10 +217,10 @@ ul.blog-posts li a:visited {
   }
 }
 
-/* Rotor Container */
+/* Rotor */
 .rotor {
   position: relative !important;
-  top: -1px !important;               /* KUNCI: Nilai minus untuk mengerek rotor naik ke tengah kurung */
+  top: -1px !important;
   display: inline-block !important;
   vertical-align: middle !important;
   width: 16px !important;
@@ -232,29 +232,29 @@ ul.blog-posts li a:visited {
   will-change: transform; /* Kunci permanen layer GPU Safari */
 }
 
-/* Ketiga Bilah Rotor */
+/* Bilah Rotor */
 .rotor span, .rotor::before, .rotor::after {
   content: "";
   position: absolute;
   top: 2px;
-  left: 7px;                          /* (16px - 2px lebar) / 2 = 7px (presisi simetris) */
-  width: 2px;                         /* Ketebalan bilah */
-  height: 12px;                       /* Panjang bilah */
+  left: 7px;
+  width: 2px;                /* Ketebalan bilah */
+  height: 12px;              /* Panjang bilah */
   background-color: currentColor;
-  transform-origin: 1px 6px;          /* Poros putar mutlak: 1px X, 6px Y */
+  transform-origin: 1px 6px;
 }
 
-/* Bilah 1: Vertikal (0°) - HAPUS translate() */
+/* Bilah 1: Vertikal (0°) */
 .rotor span {
   transform: rotate(0deg);
 }
 
-/* Bilah 2: Diagonal Kanan (60°) - HAPUS translate() */
+/* Bilah 2: Diagonal Kanan (60°) */
 .rotor::before {
   transform: rotate(60deg);
 }
 
-/* Bilah 3: Diagonal Kiri (120°) - HAPUS translate() */
+/* Bilah 3: Diagonal Kiri (120°) */
 .rotor::after {
   transform: rotate(120deg);
 }
@@ -268,6 +268,7 @@ ul.blog-posts li a:visited {
   }
 }
 
+/* Made in China, Loved by the World */
 .proud {
   display: inline-block;
   position: relative;
@@ -318,7 +319,6 @@ h2, h3 {
   text-align: center;
   margin: 0;
   padding: 0;                       /* PC tetap rapat tanpa spasi atas-bawah */
-  font-weight: bold;
   white-space: nowrap;
 
   /* Trik Stretch Vertikal (Tinggi Menjulang) */
@@ -370,7 +370,12 @@ h2, h3 {
 }
 
 ul {
-  list-style-type: "— ";  /* Em dash diikuti satu spasi */
+  list-style-type: "— ";
   padding-left: 1.5em;
+}
+
+.kurung {
+    user-select: none;
+    font-weight: 600;
 }
 </style>

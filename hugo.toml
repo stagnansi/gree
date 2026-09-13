@@ -101,7 +101,7 @@ ignoreErrors = ["error-disable-taxonomy"]
     url = "/referral/"
     weight = 94
   [[menu.main]]
-    name = "24/7"
+    name = "Always On"
     url = "/always-on/"
     weight = 95
   [[menu.main]]
