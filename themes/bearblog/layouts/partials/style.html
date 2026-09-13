@@ -331,17 +331,40 @@ h2, h3 {
 
 /* Tag Link: menghisap ruang sisa di dalam kurung */
 /* 1. Selektor Utama (Desktop & Default): Font Jangkung + Rapat Vertikal */
+/* 1. Link dibuat Flexbox agar teks rata kiri & panah menyedot sisa ruang */
 .nav-item a {
   flex: 1;
-  text-align: left;
+  display: flex;                    /* Mengaktifkan Flexbox horizontal */
+  align-items: center;              /* Vertikal rata tengah (middle) */
+  text-align: left;                 /* Teks menempel rapi di kiri setelah '[' */
   margin: 0;
-  padding: 0;                       /* PC tetap rapat tanpa spasi atas-bawah */
+  font-weight: bold;
   white-space: nowrap;
-
+  text-decoration: none;
   /* Trik Stretch Vertikal (Tinggi Menjulang) */
   display: inline-block;
   transform: scaleY(1.2); /* Menarik tinggi huruf 20% ke atas & bawah */
   transform-origin: center center;  /* Meregang seimbang dari poros tengah baris */
+}
+
+/* 2. Panah Dinamis (Batang Memanjang + Kepala Panah di Ujung ']') */
+.nav-item a::after {
+  content: "";
+  flex: 1;                          /* KUNCI: Menghisap seluruh ruang kosong */
+  height: 10px;                     /* Ketinggian area kepala panah */
+  margin-left: 1ch;                 /* Jeda tepat 1 spasi monospace dari teks */
+  background-color: currentColor;   /* Ikut warna teks (atau ganti #000 jika ingin hitam) */
+  
+  /* Vektor panah: batang 2px + segitiga runcing tepat menyentuh tepi kanan */
+  clip-path: polygon(
+    0 calc(50% - 1px),                /* Batang: kiri atas (tebal 2px) */
+    calc(100% - 6px) calc(50% - 1px), /* Batang: kanan atas */
+    calc(100% - 6px) 1px,             /* Kepala: sayap atas */
+    100% 50%,                         /* Ujung panah: menempel presisi di ']' */
+    calc(100% - 6px) calc(100% - 1px),/* Kepala: sayap bawah */
+    calc(100% - 6px) calc(50% + 1px), /* Batang: kanan bawah */
+    0 calc(50% + 1px)                 /* Batang: kiri bawah */
+  );
 }
 
 /* 2. Layar Tablet / iPad Mini / Landscape Phone: 4 Kolom */
