@@ -277,12 +277,18 @@ ul.blog-posts li a:visited {
 }
 
 details summary {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;                         /* Jarak mutlak panah ke huruf A */
+  list-style: none;
   cursor: pointer;
   font-weight: bold;
 
-  /* Menempel langsung di dalam blok parent menggunakan tanda & */
-  &:hover {
-    text-decoration: underline;
+  &::before {
+    content: "►";                   /* Panah dimunculkan otomatis oleh CSS */
+    display: inline-block;
+    flex-shrink: 0;
+    line-height: inherit;
   }
 }
 
