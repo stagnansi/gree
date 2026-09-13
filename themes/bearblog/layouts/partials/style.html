@@ -344,30 +344,34 @@ h2, h3 {
   transform-origin: center center;
 }
 
-/* 4. Panah Dinamis: Mulai 1 Spasi Monospace, Ujung Pas di ']' */
+/* Panah Dinamis: Batang Menghisap Ruang + Kepala Chevron Geometris Siku */
 .nav-item a::after {
   content: "";
-  flex: 1;                          /* Menghisap sisa ruang dari teks ke ']' */
-  height: 8px;                      /* Tinggi kepala panah */
+  flex: 1;                          /* Tetap menghisap ruang sisa dari teks hingga ']' */
+  height: 12px;                     /* Ketinggian ideal untuk rentang sayap chevron */
   margin-left: 1ch;                 /* Jeda tepat 1 spasi monospace dari kata */
-  background-color: currentColor;   /* Warna batang & kepala ikut warna teks */
-  
-  /* Vektor Batang 2px + Kepala Panah Runcing Menempel di Kurung */
+  background-color: currentColor;   /* Warna ikut teks tautan */
+
+  /* Poligon Vektor: Batang 2px + Kepala Chevron Sayap Terbuka (Sesuai Gambar) */
   -webkit-clip-path: polygon(
-    0 calc(50% - 1px),
-    calc(100% - 5px) calc(50% - 1px),
-    calc(100% - 5px) 0,
-    100% 50%,
-    calc(100% - 5px) 100%,
-    calc(100% - 5px) calc(50% + 1px),
-    0 calc(50% + 1px)
+    0 calc(50% - 1px),                   /* 1. Batang: Kiri atas (tebal 2px) */
+    calc(100% - 5px) calc(50% - 1px),    /* 2. Batang: Menembus sudut dalam chevron */
+    calc(100% - 8px) calc(50% - 4px),    /* 3. Sayap atas: Garis dalam */
+    calc(100% - 6px) calc(50% - 6px),    /* 4. Sayap atas: Ujung potongan rata (flat cap) */
+    100% 50%,                            /* 5. Ujung runcing panah tepat menempel di ']' */
+    calc(100% - 6px) calc(50% + 6px),    /* 6. Sayap bawah: Ujung potongan rata (flat cap) */
+    calc(100% - 8px) calc(50% + 4px),    /* 7. Sayap bawah: Garis dalam */
+    calc(100% - 5px) calc(50% + 1px),    /* 8. Batang: Menembus sudut dalam chevron bawah */
+    0 calc(50% + 1px)                    /* 9. Batang: Kiri bawah */
   );
   clip-path: polygon(
     0 calc(50% - 1px),
     calc(100% - 5px) calc(50% - 1px),
-    calc(100% - 5px) 0,
+    calc(100% - 8px) calc(50% - 4px),
+    calc(100% - 6px) calc(50% - 6px),
     100% 50%,
-    calc(100% - 5px) 100%,
+    calc(100% - 6px) calc(50% + 6px),
+    calc(100% - 8px) calc(50% + 4px),
     calc(100% - 5px) calc(50% + 1px),
     0 calc(50% + 1px)
   );
