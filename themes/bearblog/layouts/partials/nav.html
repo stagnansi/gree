@@ -1,11 +1,16 @@
 <hr>
-<!-- spoiler: .nav-grid tambah margin-top: 1em; <details class="menu"><summary>MENU KLIK DI SINI</summary> -->
+<!-- Tangkap konteks halaman saat ini -->
+{{- $currentPage := . -}}
+
 <div class="nav-grid">
   {{- range .Site.Menus.main -}}
     {{- if ne .Name "Home" -}}
-      <span class="nav-item"><b class="kurung">[</b><a href="{{ .URL }}">{{ .Name | upper }}</a><b class="kurung">]</b></span>
+      {{/* Cek apakah URL menu sama dengan halaman yang sedang dibuka */}}
+      {{- $isActive := or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) (eq $currentPage.RelPermalink .URL) -}}
+      <span class="nav-item{{ if $isActive }} active{{ end }}">
+        <b class="kurung">[</b><a href="{{ .URL }}">{{ .Name | upper }}</a><b class="kurung">]</b>
+      </span>
     {{- end -}}
   {{- end -}}
 </div>
-<!-- spoiler </details> -->
 <hr>

@@ -1,7 +1,7 @@
 +++
 title = "Referral 转诊"
 +++
-## *Refer a Friend & Get the Reward!*<span class="select">💸</span>转诊
+## *Refer a Friend & Get the Reward!*<span class="select"> 💸 </span>
 
 ---
 Program rekrutmen internal **Gree × FLiFE**. Ajak teman kerja bareng, dapat *cuan* tambahan langsung masuk ke rekening pribadi!
