@@ -4,7 +4,7 @@ title = "Installer 安装程序"
 ## Installer 安装程序
 
 ---
-### Super Reward ==1 Jul. – 30 Sep.==
+### Reward ==1 Jul. – 30 Sep.==
 > WA Hotline Installer BKS [0822-9596-1960](tab:https://wa.me/6282295961960)
 
 ---
