@@ -7,10 +7,10 @@ title = "Katalog & Flyer 产品目录和宣传单"
 1. [Free Match™](tab:https://ggl.link/freematch)
 2. [GMV™](tab:https://ggl.link/katalog-gmv)
 3. [Gree 2026](tab:https://ggl.link/katalog26)
-4. [LCAC FLiFE®](tab:https://ggl.link/lcacflife)
+4. [LCAC FLIFE](tab:https://ggl.link/lcacflife)
 5. [LCAC Gree](tab:https://ggl.link/lcacgree)
 6. [U-Match™](tab:https://ggl.link/umatch)
-7. **FLiFE® RAC+HA tidak ada katalog**
+7. **FLIFE RAC+HA tidak ada katalog**
 
 ---
 > - **[Google Drive Katalog](tab:https://ggl.link/catalog)**
@@ -61,3 +61,11 @@ title = "Katalog & Flyer 产品目录和宣传单"
 
 ---
 > - **[Google Drive Flyer](tab:https://ggl.link/flyer)**
+
+---
+## ==Kitbook== 套件手册
+1. [Kitbook Gree](tab:https://drive.google.com/file/d/1dl1Ed_0P-7eMEGQUojxsDvjPh9hw07mR/)
+2. [Kitbook Mini — Inverter](tab:https://drive.google.com/file/d/1it-asEeZcFhhy-Az-O0z2fxyiRmLJCCg/)
+
+---
+> - **[Google Drive Kitbook](tab:https://drive.google.com/drive/folders/1b0KmfmKjEZT1APSPdwE4cQZNyvX6v13t/)**

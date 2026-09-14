@@ -112,6 +112,7 @@ footer {
   text-align: left;
   display: block;
   margin-top: -10px;
+  margin-bottom: -30px;
 }
 
 .title:hover {
@@ -130,7 +131,7 @@ footer {
   padding: 1px 15px;
   background-color: var(--code-background-color);
   color: var(--code-color);
-  border-radius: 3px;
+  border-radius: 0px;
   margin-block-start: 1em;
   margin-block-end: 1em;
   overflow-x: auto;
@@ -329,8 +330,8 @@ h2, h3 {
 /* navigation */
 .nav-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 10px 12px;
+  grid-template-columns: repeat(4, 1fr); /* Default PC: 4 Kolom (Pas 3 baris simetris) */
+  gap: 10px 14px;
   width: 100%;
   box-sizing: border-box;
 }
@@ -350,17 +351,17 @@ h2, h3 {
   white-space: nowrap;
   text-decoration: none;
 
-  /* stretch */
+  /* Stretch vertical */
   transform: scaleY(1.2);
   transform-origin: center center;
 }
 
-/* emdash */
+/* Garis dashed dinamis penghubung menu */
 .nav-item a::after {
   content: "";
   flex: 1;
-  height: 1px;
-  background-color: var(--text-color);
+  height: 0;
+  border-bottom: 1px dashed var(--text-color); /* atau ganti ke var(--border-color) jika hr lebih redup */
   margin-left: 0.5ch;
 }
 
@@ -368,19 +369,11 @@ h2, h3 {
   text-decoration: underline;
 }
 
-/* 4 kolom */
-@media (max-width: 660px) {
-  .nav-grid {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px 10px;
-  }
-}
-
-/* 3 kolom */
-@media (max-width: 540px) {
+/* 3 kolom (Tablet / Ponsel Lebar) */
+@media (max-width: 620px) {
   .nav-grid {
     grid-template-columns: repeat(3, 1fr);
-    row-gap: 4px !important;
+    row-gap: 5px !important;
     column-gap: 8px;
     font-size: 0.92em;
     line-height: 1;
@@ -395,13 +388,13 @@ h2, h3 {
   }
 }
 
-/* 2 kolom */
-@media (max-width: 400px) {
+/* 2 kolom (Ponsel Standar) */
+@media (max-width: 420px) {
   .nav-grid {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 4px !important;
     column-gap: 8px;
-    font-size: 1.1em;
+    font-size: 1.05em;
     line-height: 1;
   }
 
@@ -429,7 +422,7 @@ ul {
 }
 
 .br {
-  height: 0.5em;
+  margin-bottom: -0.2em;
 }
 
 /* youtube */
