@@ -8,6 +8,10 @@ dan proyek ini mengikuti [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 ## [Unreleased]
 
 ### Added
+- Override `layouts/_default/baseof.html`: fix deprecated `.Site.LanguageCode` + title `IsHome`
+- Markdown mark extension (==teks==) dengan styling kuning stabilo
+- Timezone Asia/Jakarta di hugo.toml untuk fix "future post" issue
+- Dark mode dimatikan total via override prefers-color-scheme
 - Footer custom bertema "nameplate outdoor unit AC" sebagai easter egg
 - Animasi kipas berputar (karakter `&#10033;`, 3 detik per rotasi)
 - Font subset Noto Sans SC (self-hosted, 8 karakter) untuk slogan Chinese

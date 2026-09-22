@@ -73,6 +73,10 @@
     font-size: 0.85em;
   }
 
+  .footer-row span {
+    line-height: 1;
+  }
+
   .footer-mono {
     font-family: var(--font-mono);
   }
@@ -93,5 +97,22 @@
     color: #ccc;
     margin-top: 3px;
     letter-spacing: 1.1px;
+  }
+  mark {
+    background-color: #ffff00;
+    color: inherit;
+    padding: 1px 3px;
+    border-radius: 2px;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background-color: #fff;
+      --heading-color: #222;
+      --text-color: #444;
+      --link-color: #3273dc;
+      --visited-color: #8b6fcb;
+      --blockquote-color: #222;
+    }
   }
 </style>

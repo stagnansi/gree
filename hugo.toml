@@ -9,7 +9,8 @@ theme = 'hugo-bearblog'
 title = "Gree® BKS"
 author = "Bara Imoet"
 copyright = "Copyright © 2026, Bara Imoet."
-languageCode = "id"
+locale = "id"
+timeZone = "Asia/Jakarta"
 
 # Generate a nice robots.txt for SEO
 enableRobotsTXT = true
@@ -64,3 +65,5 @@ ignoreErrors = ["error-disable-taxonomy"]
     lineNos = true
     lineNumbersInTable = false
     codeFences = true
+[markup.goldmark.extensions.extras.mark]
+enable = true
