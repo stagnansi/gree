@@ -51,10 +51,23 @@
 - Konfirmasi sebelum override properti yang sudah ada
 - Referensi selalu ke standar baku (Keep a Changelog, Semantic Versioning, dll)
 
-## Batch 3 (AKTIF): Menu Cleanup
-- Status: dalam proses
-- Keputusan pending: struktur menu, nasib hugo.md/bear.md, konten homepage
+## Batch 3 (SELESAI): Menu Cleanup
+- 12 halaman baru: Pricelist, Birthday, Compro, Installer, Internal, Kartu Garansi, Katalog, Kode Eror, Sertifikat, Surat, Referral, Always On
+- Hapus hugo.md, bear.md (demo tema)
+- Home dihapus dari nav (menu = main dihapus dari _index.md)
+- Navbar: grid 4 kolom, font normal
+- Blog weight: 100 -> 130
+- Konten homepage masih demo (belum diganti)
 
+## Batch 4 (KANDIDAT): Konten
+- Isi konten 12 halaman (Pricelist, dll)
+- Ganti konten homepage dari demo tema
+- Blog post pertama
+- Ganti favicon & share.png
+
+## Batch 5 (KANDIDAT): Sidebar
+- Ganti navbar horizontal jadi sidebar kiri (opsi F dari preview)
+- Butuh modifikasi baseof.html + header.html + CSS
 ## Pending / Kandidat Batch 3
 - Menu cleanup (hapus/ubah menu Hugo, Bear, Blog)
 - Konten homepage (ganti dari demo tema)
