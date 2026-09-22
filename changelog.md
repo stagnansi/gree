@@ -20,6 +20,7 @@ dan proyek ini mengikuti [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 - `changelog.md` dengan format Keep a Changelog
 
 ### Changed
+- Title header (`.title h2`) → font-weight 900
 - `hugo.toml`: `copyright` → "Copyright © 2026, Bara Imoet."
 - `hugo.toml`: `params.description` → "Gree BKS."
 - `hugo.toml`: `params.title` → "Gree® BKS"
