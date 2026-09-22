@@ -23,7 +23,7 @@ dan proyek ini mengikuti [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 - Tipografi: heading → InterDisplay, body → Inter, mono → IBM Plex Mono
 - Slashed zero aktif secara global via `font-feature-settings: 'zero' 1`
 - `time` element → IBM Plex Mono
-- Footer plate: width 35%, ter-center (`margin: 0 auto`), base font `calc(var(--font-scale) * 0.8)`
+- Footer plate: fluid width (`max-width: 240px`), ter-center (`margin: 0 auto`), base font `calc(var(--font-scale) * 0.8)`
 - `GREE®` di footer → weight 900 italic
 - `ZHUHAI × BEKAZHI` dan `2026` di footer → IBM Plex Mono
 - Footer `0` di `IM0ET` → Inter slashed (bukan mono, karena mono dotted)
