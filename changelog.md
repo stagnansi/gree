@@ -5,11 +5,13 @@ Semua perubahan penting pada proyek ini didokumentasikan di file ini.
 Format berdasarkan [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 dan proyek ini mengikuti [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [0.1.0] - 2026-09-23
 
 ### Added
 - 12 halaman menu baru: Pricelist, Birthday, Compro, Installer, Internal, Kartu Garansi, Katalog, Kode Eror, Sertifikat, Surat, Referral, Always On
-- Navbar CSS: grid 4 kolom, font size normal
+- Navbar CSS: grid responsif (5 → 4 → 3 → 2 kolom)
+- Navbar arrow prefix `→` di kiri tiap item (via `.nav-arrow`, di luar `<a>`, `aria-hidden`, `user-select: none`)
+- Override `layouts/partials/nav.html`: struktur `.nav-item` wrapper untuk arrow di luar link
 - Override `layouts/_default/baseof.html`: fix deprecated `.Site.LanguageCode` + title `IsHome`
 - Markdown mark extension (==teks==) dengan styling kuning stabilo
 - Timezone Asia/Jakarta di hugo.toml untuk fix "future post" issue
@@ -22,6 +24,10 @@ dan proyek ini mengikuti [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 - `changelog.md` dengan format Keep a Changelog
 
 ### Changed
+- Navbar: dari inline default Bear → grid `max-content` + `justify-content: space-between`
+- Navbar gap: `0 12px` (row-gap 0, column-gap 12px)
+- Navbar `white-space: nowrap` untuk cegah wrapping menu 2-kata
+- Navbar `nav a { margin-right: 0 }` — netralkan margin tema yang konflik dengan grid
 - Hapus halaman demo `hugo.md` dan `bear.md`
 - Hapus `menu = "main"` dari `_index.md` (Home tidak lagi di nav)
 - Blog weight diubah dari 100 ke 130
@@ -43,3 +49,6 @@ dan proyek ini mengikuti [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ### Removed
 - (kosong)
+
+[Unreleased]: https://github.com/stagnansi/gree/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/stagnansi/gree/releases/tag/v0.1.0

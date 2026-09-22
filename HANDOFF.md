@@ -8,10 +8,11 @@
 - Timezone: Asia/Jakarta (di hugo.toml + env var `TZ` di Cloudflare)
 - Lokal folder: D:\Hugo\Gree
 - Alias: `hs` = hugo server -D
+- Current version: v0.1.0 (2026-09-23)
 
 ## Struktur Kunci
 - Theme: hugo-bearblog (submodule)
-- Override di root project: `layouts/_default/baseof.html`, `layouts/partials/footer.html`, `layouts/partials/custom_head.html`
+- Override di root project: `layouts/_default/baseof.html`, `layouts/partials/footer.html`, `layouts/partials/custom_head.html`, `layouts/partials/nav.html`
 - File tema TIDAK disentuh, semua override di root project
 
 ## Konfigurasi Aktif
@@ -27,6 +28,15 @@
 - Slashed zero global: `font-feature-settings: 'zero' 1`
 - Font CJK: Noto Sans SC Subset (self-hosted, 8 karakter, 1.8 KB)
 
+## Navbar Responsif
+- Grid responsif: 5 → 4 → 3 → 2 kolom (breakpoint 720px / 620px / 340px)
+- `grid-template-columns: repeat(N, max-content)` + `justify-content: space-between`
+- Gap `0 12px` (row-gap 0, column-gap 12px)
+- `white-space: nowrap` untuk cegah wrapping menu 2-kata
+- Arrow prefix `→` via `.nav-arrow` di luar `<a>` (tidak bisa diklik, `aria-hidden`, `user-select: none`)
+- Override `layouts/partials/nav.html` untuk wrapper `.nav-item`
+- `nav a { margin-right: 0 }` — netralkan margin tema (8px) yang konflik dengan grid gap
+
 ## Footer Custom (Easter Egg "Nameplate AC")
 - Layout: 4 baris (GREE+✱ / BARA + IM0ET·2026 / hanzi / ZHUHAI × BEKAZHI)
 - Width: `100%` dengan `max-width: 240px`, `margin: 0 auto` (center)
@@ -34,6 +44,12 @@
 - Kipas ✱ berputar 3s/rotation
 - `line-height: 1` di span untuk sejajarkan mono vs Inter
 - `0` di IM0ET: Inter slashed (bukan mono, karena mono dotted)
+
+## Versioning
+- Semantic Versioning (MAJOR.MINOR.PATCH)
+- Changelog format: Keep a Changelog
+- Rilis ditandai dengan `git tag vX.Y.Z` + push tag
+- Current: **v0.1.0** (2026-09-23)
 
 ## Aturan Kerja (Ritme)
 1. Kasih cmd → user paste hasil → verifikasi error
@@ -51,30 +67,35 @@
 - Konfirmasi sebelum override properti yang sudah ada
 - Referensi selalu ke standar baku (Keep a Changelog, Semantic Versioning, dll)
 
-## Batch 3 (SELESAI): Menu Cleanup
+## Riwayat Batch
+
+### Batch 1-2 (SELESAI): Setup + Theme
+- Hugo + hugo-bearblog setup
+- Tipografi overhaul (Inter, InterDisplay, IBM Plex Mono)
+- Footer custom "nameplate AC"
+- Mark extension, timezone fix, deprecated API fix
+
+### Batch 3 (SELESAI): Menu Cleanup
 - 12 halaman baru: Pricelist, Birthday, Compro, Installer, Internal, Kartu Garansi, Katalog, Kode Eror, Sertifikat, Surat, Referral, Always On
 - Hapus hugo.md, bear.md (demo tema)
 - Home dihapus dari nav (menu = main dihapus dari _index.md)
-- Navbar: grid 4 kolom, font normal
-- Blog weight: 100 -> 130
+- Blog weight: 100 → 130
 - Konten homepage masih demo (belum diganti)
 
-## Batch 4 (KANDIDAT): Konten
+### Batch 3.5 (SELESAI): Navbar Refinement
+- Grid responsif 5-4-3-2 kolom (breakpoint 720/620/340)
+- Arrow prefix `→` di luar link
+- Override `nav.html`
+
+### Batch 4 (KANDIDAT): Konten
 - Isi konten 12 halaman (Pricelist, dll)
 - Ganti konten homepage dari demo tema
 - Blog post pertama
 - Ganti favicon & share.png
 
-## Batch 5 (KANDIDAT): Sidebar
+### Batch 5 (KANDIDAT): Sidebar
 - Ganti navbar horizontal jadi sidebar kiri (opsi F dari preview)
 - Butuh modifikasi baseof.html + header.html + CSS
-## Pending / Kandidat Batch 3
-- Menu cleanup (hapus/ubah menu Hugo, Bear, Blog)
-- Konten homepage (ganti dari demo tema)
-- Halaman baru (About, Contact, dll)
-- Blog post pertama
-- Ganti favicon & share.png (masih default tema)
-- Test mark di production
 
 ## Catatan Teknis
 - PowerShell 7.6.6 (bukan 5.1)
@@ -82,3 +103,5 @@
 - Hugo server auto-reload, tapi kalau port 1313 dipakai, otomatis pindah ke 2820
 - Gunakan absolute path untuk .NET methods (`[System.IO.File]::ReadAllText`)
 - Here-string multi-line rawan error di PS — pakai array join `@() -join` untuk yang kompleks
+- Single-quoted here-string `@'...'@` aman untuk konten dengan backtick/quote
+- `git --no-pager` untuk hindari terjebak di pager `less`
