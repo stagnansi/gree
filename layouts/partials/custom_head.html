@@ -1,5 +1,22 @@
+<link rel="preconnect" href="https://rsms.me/">
+<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 <link rel="preload" href="/fonts/noto-sans-sc-subset.woff2" as="font" type="font/woff2" crossorigin>
 <style>
+  :root {
+    --font-main: InterDisplay, sans-serif;
+    --font-secondary: Inter, sans-serif;
+    --font-mono: 'IBM Plex Mono', monospace;
+    font-feature-settings: 'liga' 1, 'calt' 1, 'zero' 1;
+    font-variant-numeric: slashed-zero;
+  }
+
+  time {
+    font-family: var(--font-mono);
+  }
+
   @font-face {
     font-family: 'Noto Sans SC Subset';
     src: url('/fonts/noto-sans-sc-subset.woff2') format('woff2');
@@ -11,22 +28,23 @@
   .footer-plate {
     border: 1px solid #e0e0e0;
     border-radius: 3px;
-    padding: 5px 9px;
-    font-family: Consolas, 'Courier New', monospace;
-    font-size: 9px;
+    padding: 6px 10px;
+    font-size: calc(var(--font-scale) * 0.8);
     color: #999;
-    display: inline-block;
-    min-width: 170px;
+    display: block;
+    width: 35%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: left;
     line-height: 1.4;
     user-select: none;
     -webkit-user-select: none;
   }
 
   .footer-brand {
-    font-family: Verdana, sans-serif;
-    font-size: 9px;
+    font-size: 1.2em;
     color: #b0b0b0;
-    font-weight: 600;
+    font-weight: 900;
     font-style: italic;
   }
 
@@ -35,7 +53,7 @@
     animation: footer-spin 3s linear infinite;
     transform-origin: 50% 50%;
     color: #a5a5a5;
-    font-size: 11px;
+    font-size: 1.2em;
   }
 
   @keyframes footer-spin {
@@ -45,19 +63,23 @@
 
   .footer-divider {
     border-top: 1px dashed #e2e2e2;
-    margin: 4px 0;
+    margin: 6px 0;
   }
 
   .footer-row {
     display: flex;
     justify-content: space-between;
-    font-size: 8.5px;
+    font-size: 0.85em;
+  }
+
+  .footer-mono {
+    font-family: var(--font-mono);
   }
 
   .footer-slogan {
     text-align: center;
-    font-family: 'Noto Sans SC Subset', 'Microsoft YaHei', 'PingFang SC', 'Noto Sans SC', sans-serif;
-    font-size: 10px;
+    font-family: 'Noto Sans SC Subset', var(--font-secondary);
+    font-size: 0.95em;
     color: #b0b0b0;
     user-select: text;
     -webkit-user-select: text;
@@ -65,14 +87,10 @@
 
   .footer-origin {
     text-align: center;
-    font-size: 7.5px;
+    font-family: var(--font-mono);
+    font-size: 0.75em;
     color: #ccc;
     margin-top: 3px;
     letter-spacing: 1.1px;
-  }
-
-  .footer-zero {
-    font-family: Consolas, 'Courier New', monospace;
-    font-variant-numeric: slashed-zero;
   }
 </style>
