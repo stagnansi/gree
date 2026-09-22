@@ -51,6 +51,10 @@
 - Konfirmasi sebelum override properti yang sudah ada
 - Referensi selalu ke standar baku (Keep a Changelog, Semantic Versioning, dll)
 
+## Batch 3 (AKTIF): Menu Cleanup
+- Status: dalam proses
+- Keputusan pending: struktur menu, nasib hugo.md/bear.md, konten homepage
+
 ## Pending / Kandidat Batch 3
 - Menu cleanup (hapus/ubah menu Hugo, Bear, Blog)
 - Konten homepage (ganti dari demo tema)

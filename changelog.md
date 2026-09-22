@@ -8,6 +8,8 @@ dan proyek ini mengikuti [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 ## [Unreleased]
 
 ### Added
+- 12 halaman menu baru: Pricelist, Birthday, Compro, Installer, Internal, Kartu Garansi, Katalog, Kode Eror, Sertifikat, Surat, Referral, Always On
+- Navbar CSS: grid 4 kolom, font size normal
 - Override `layouts/_default/baseof.html`: fix deprecated `.Site.LanguageCode` + title `IsHome`
 - Markdown mark extension (==teks==) dengan styling kuning stabilo
 - Timezone Asia/Jakarta di hugo.toml untuk fix "future post" issue
@@ -20,6 +22,9 @@ dan proyek ini mengikuti [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 - `changelog.md` dengan format Keep a Changelog
 
 ### Changed
+- Hapus halaman demo `hugo.md` dan `bear.md`
+- Hapus `menu = "main"` dari `_index.md` (Home tidak lagi di nav)
+- Blog weight diubah dari 100 ke 130
 - Title header (`.title h2`) → font-weight 900
 - `hugo.toml`: `copyright` → "Copyright © 2026, Bara Imoet."
 - `hugo.toml`: `params.description` → "Gree BKS."
