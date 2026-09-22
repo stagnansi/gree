@@ -128,6 +128,19 @@
 
   nav a {
     margin-right: 0;
+    white-space: nowrap;
   }
 
+
+  @media (max-width: 620px) {
+    nav {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (max-width: 340px) {
+    nav {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
 </style>
