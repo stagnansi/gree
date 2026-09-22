@@ -1,0 +1,6 @@
+{{- range .Site.Menus.main -}}
+<span class="nav-item">
+  <span class="nav-arrow" aria-hidden="true">&rarr;</span>
+  <a href="{{ .URL }}">{{ .Name }}</a>
+</span>
+{{- end -}}
