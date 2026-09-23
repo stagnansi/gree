@@ -1,0 +1,50 @@
+<script>
+(function () {
+  // --- Emoji user-select: none ---
+  var EMOJI_RE = /[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}\u{1F1E6}-\u{1F1FF}]\uFE0F?/gu;
+  var SKIP_TAGS = { SCRIPT:1, STYLE:1, PRE:1, CODE:1, TEXTAREA:1 };
+  function walk(n) {
+    if (n.nodeType === 3) {
+      var t = n.nodeValue;
+      EMOJI_RE.lastIndex = 0;
+      if (!EMOJI_RE.test(t)) return;
+      EMOJI_RE.lastIndex = 0;
+      var frag = document.createDocumentFragment(), last = 0, m;
+      while ((m = EMOJI_RE.exec(t)) !== null) {
+        if (m.index > last) frag.appendChild(document.createTextNode(t.slice(last, m.index)));
+        var s = document.createElement('span');
+        s.className = 'emoji';
+        s.textContent = m[0];
+        frag.appendChild(s);
+        last = m.index + m[0].length;
+      }
+      if (last < t.length) frag.appendChild(document.createTextNode(t.slice(last)));
+      n.parentNode.replaceChild(frag, n);
+    } else if (n.nodeType === 1) {
+      if (SKIP_TAGS[n.tagName]) return;
+      if (n.classList && n.classList.contains('emoji')) return;
+      Array.prototype.slice.call(n.childNodes).forEach(walk);
+    }
+  }
+  function runEmoji() { walk(document.body); }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', runEmoji);
+  else runEmoji();
+
+  // --- Back to top ---
+  var btn = document.querySelector('.back-to-top');
+  var wrap = document.querySelector('.footer-back-to-top');
+  if (btn && wrap) {
+    function update() {
+      var scrollable = document.documentElement.scrollHeight > window.innerHeight + 4;
+      if (scrollable) wrap.removeAttribute('hidden');
+      else wrap.setAttribute('hidden', '');
+    }
+    btn.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    window.addEventListener('resize', update, { passive: true });
+    window.addEventListener('load', update);
+    update();
+  }
+})();
+</script>

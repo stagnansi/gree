@@ -7,14 +7,22 @@ dan proyek ini mengikuti [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+### Added
+- Homepage custom: hero "Portal Internal" + callout confidential (mark kuning "RAHASIA")
+- `layouts/partials/custom_body.html` (baru): JS untuk emoji user-select + back-to-top
+- Tombol "↑ KEMBALI KE ATAS" di footer (kondisional via JS, hanya muncul kalau halaman scrollable)
+
 ### Changed
+- Font hanzi: Google Fonts Noto Sans SC → self-host subset (`static/fonts/noto-sans-sc-subset.woff2`, 1.8 KB)
+- `@font-face` 'Noto Sans SC Subset' di-restore di `custom_head.html`
+- `blockquote { font-style: normal }` global (override italic default)
+- `.emoji` class: `user-select: none` untuk semua emoji (di-wrap via JS)
 - Favicon: dari default Bear Blog → favicon resmi Gree Indonesia (`https://gree.id/favicon.ico`)
-- `hugo.toml`: `params.favicon` = `"favicon.ico"` (dari `"images/favicon.png"`)
+- `hugo.toml`: `params.favicon` = `"favicon.ico"`
 - `static/favicon.ico`: diganti dengan favicon Gree (single-size ICO, 61×60)
 
 ### Removed
-- `static/images/favicon.png` (favicon default Bear Blog, sudah tidak dipakai)
-
+- `static/images/favicon.png` (favicon default Bear Blog)
 ## [0.1.0] - 2026-09-23
 
 ### Added
