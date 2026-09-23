@@ -8,7 +8,7 @@
 - Timezone: Asia/Jakarta (di hugo.toml + env var `TZ` di Cloudflare)
 - Lokal folder: D:\Hugo\Gree
 - Alias: `hs` = hugo server -D
-- Current version: v0.1.0 (2026-09-23)
+- Current version: v0.1.0 (2026-09-23) + Unreleased changes (lihat changelog.md)
 
 ## Struktur Kunci
 - Theme: hugo-bearblog (submodule)
@@ -87,11 +87,23 @@
 - Arrow prefix `→` di luar link
 - Override `nav.html`
 
-### Batch 4 (KANDIDAT): Konten
-- Isi konten 12 halaman (Pricelist, dll)
-- Ganti konten homepage dari demo tema
-- Blog post pertama
-- Ganti favicon & share.png
+### Batch 3.6 (SELESAI): Favicon + Homepage + Utilitas
+- Favicon Gree Indonesia (dari gree.id) ganti default Bear (commit fb2ce55)
+- Homepage custom: hero "Portal Internal" + callout RAHASIA (mark kuning) (commit 03cad85)
+- Font hanzi: kembali ke self-host subset (drop Google Fonts Noto)
+- `blockquote { font-style: normal }` global
+- Emoji user-select:none via JS (custom_body.html baru)
+- Back-to-top kondisional di footer (muncul hanya kalau scrollable)
+- Hapus share.png + folder images/ (portal internal)
+- Audit duplikasi CSS + dead code: CLEAN
+
+### Batch 4 (IN PROGRESS): Konten
+- [SELESAI] Favicon resmi Gree Indonesia (commit fb2ce55)
+- [SELESAI] Homepage custom (hero + callout RAHASIA) (commit 03cad85)
+- [SELESAI] Emoji user-select:none + back-to-top kondisional (commit 03cad85)
+- [SELESAI] Hapus share.png + referensi (portal internal, no preview)
+- [TODO] Isi konten 12 halaman (masih frontmatter kosong)
+- [TODO] Blog post pertama (markdown-syntax.md masih demo Bear, biarkan untuk cek markdown)
 
 ### Batch 5 (KANDIDAT): Sidebar
 - Ganti navbar horizontal jadi sidebar kiri (opsi F dari preview)

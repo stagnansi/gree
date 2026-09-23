@@ -23,6 +23,8 @@ dan proyek ini mengikuti [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ### Removed
 - `static/images/favicon.png` (favicon default Bear Blog)
+- `static/images/share.png` + folder `static/images/` (portal internal, preview share tidak diperlukan)
+- `hugo.toml`: `params.images` (referensi ke `share.png` dihapus)
 ## [0.1.0] - 2026-09-23
 
 ### Added
