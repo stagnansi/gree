@@ -5,6 +5,16 @@ Semua perubahan penting pada proyek ini didokumentasikan di file ini.
 Format berdasarkan [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 dan proyek ini mengikuti [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Changed
+- Favicon: dari default Bear Blog → favicon resmi Gree Indonesia (`https://gree.id/favicon.ico`)
+- `hugo.toml`: `params.favicon` = `"favicon.ico"` (dari `"images/favicon.png"`)
+- `static/favicon.ico`: diganti dengan favicon Gree (single-size ICO, 61×60)
+
+### Removed
+- `static/images/favicon.png` (favicon default Bear Blog, sudah tidak dipakai)
+
 ## [0.1.0] - 2026-09-23
 
 ### Added
