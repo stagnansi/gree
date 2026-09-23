@@ -61,3 +61,6 @@ ignoreErrors = ["error-disable-taxonomy"]
     codeFences = true
 [markup.goldmark.extensions.extras.mark]
 enable = true
+
+[markup.goldmark.renderer]
+  unsafe = true
