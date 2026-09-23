@@ -87,6 +87,16 @@
 - Arrow prefix `→` di luar link
 - Override `nav.html`
 
+### Batch 3.7 (SELESAI): Markdown Styling + Cleanup
+- Tabel: border collapse + mono font
+- Code block: no line numbers, IBM Plex Mono, padding fix (strut/leading fix via line-height 0 di pre + 1.4 di span), border-radius 0
+- UL (kecuali blog-posts): prefix `→` via `::before`
+- `hugo.toml`: `disableKinds` tambah `"term"`
+- `content/blog/markdown-syntax.md`: hapus tags dari frontmatter
+- Cleanup: hapus semua `.bak`, folder kosong (`assets/`, `data/`, `i18n/`), tambah `*.bak` ke `.gitignore`
+- Audit CSS: duplikat selector (`:root` 2x, `nav` 4x) semua intentional (dark mode override + responsive breakpoint), tidak ada dead code
+- Pelajaran: strut/leading space di code block berasal dari `<pre>` `line-height`, fix dengan `line-height: 0` di pre + `1.4` di `span` (karena Hugo bungkus tiap baris dalam `<span style="display:flex">`)
+
 ### Batch 3.6 (SELESAI): Favicon + Homepage + Utilitas
 - Favicon Gree Indonesia (dari gree.id) ganti default Bear (commit fb2ce55)
 - Homepage custom: hero "Portal Internal" + callout RAHASIA (mark kuning) (commit 03cad85)

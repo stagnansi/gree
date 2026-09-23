@@ -16,7 +16,7 @@ timeZone = "Asia/Jakarta"
 enableRobotsTXT = true
 
 # Generate "Bearblog"-like URLs !only!, see https://bearblog.dev/.
-disableKinds = ["taxonomy"]
+disableKinds = ["taxonomy", "term"]
 ignoreErrors = ["error-disable-taxonomy"]
 [permalinks]
   blog = "/:slug/"
@@ -56,7 +56,7 @@ ignoreErrors = ["error-disable-taxonomy"]
 [markup]
   [markup.highlight]
     style = 'friendly'
-    lineNos = true
+    lineNos = false
     lineNumbersInTable = false
     codeFences = true
 [markup.goldmark.extensions.extras.mark]
