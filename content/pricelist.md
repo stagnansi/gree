@@ -46,7 +46,7 @@ BTAM: Batam
 
 ---
 
-> - [Google Drive Pricelist](https://ggl.link/pricelist)  
-`Terakhir diperbarui: 15 September 2026`
+> * [Google Drive Pricelist](https://ggl.link/pricelist)  
+> * `Terakhir diperbarui: 15 Sep. 2026`
 
 ---

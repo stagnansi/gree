@@ -121,7 +121,12 @@
 - [SELESAI] Homepage custom (hero + callout RAHASIA) (commit 03cad85)
 - [SELESAI] Emoji user-select:none + back-to-top kondisional (commit 03cad85)
 - [SELESAI] Hapus share.png + referensi (portal internal, no preview)
-- [TODO] Isi konten 12 halaman (masih frontmatter kosong)
+- [SELESAI] Pricelist: tabel per wilayah + legend + `<br>` + mark FLFE
+- [SELESAI] Birthday: tabel ultah + CA reminder + link Sheets
+- [SELESAI] Compro: 2 brand (FLiFE/Gree) + link pptx + `.mono` tanggal
+- [SELESAI] Render hook external link + goldmark unsafe=true
+- [SELESAI] Utility class `.mono` + inline code alignment fix
+- [TODO] 9 halaman lain (Installer, Internal, Kartu Garansi, Katalog, Kode Eror, Sertifikat, Surat, Referral, Always On)
 - [TODO] Blog post pertama (markdown-syntax.md masih demo Bear, biarkan untuk cek markdown)
 
 ### Batch 5 (KANDIDAT): Sidebar

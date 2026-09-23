@@ -8,6 +8,11 @@ dan proyek ini mengikuti [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 ## [Unreleased]
 
 ### Added
+- Halaman konten: Pricelist (tabel per wilayah + legend), Birthday (daftar ultah dealer + CA reminder), Compro (2 brand + link pptx)
+- Utility class `.mono` untuk paksa mono font
+- Render hook `render-link.html`: external link auto target=_blank + rel=noopener
+- `hugo.toml`: goldmark.renderer.unsafe=true (untuk <br> di sel tabel)
+
 - Homepage custom: hero "Portal Internal" + callout confidential (mark kuning "RAHASIA")
 - `layouts/partials/custom_body.html` (baru): JS untuk emoji user-select + back-to-top
 - Tombol "↑ KEMBALI KE ATAS" di footer (kondisional via JS, hanya muncul kalau halaman scrollable)
