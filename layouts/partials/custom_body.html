@@ -46,5 +46,55 @@
     window.addEventListener('load', update);
     update();
   }
+
+  // --- URL auto-link + monospace class ---
+  (function () {
+    var URL_RE = /\bhttps?:\/\/[^\s<>"'\)\]]+/g;
+    var SKIP_TAGS = { SCRIPT:1, STYLE:1, PRE:1, CODE:1, TEXTAREA:1, A:1 };
+
+    function isUrl(s) { return /^https?:\/\//i.test(s); }
+
+    // Pass 1: style existing <a> yang text-nya URL
+    var anchors = document.querySelectorAll('a');
+    for (var i = 0; i < anchors.length; i++) {
+      if (isUrl(anchors[i].textContent.trim())) {
+        anchors[i].classList.add('url-link');
+      }
+    }
+
+    // Pass 2: auto-link URL di plain text
+    function walkUrls(n) {
+      if (n.nodeType === 3) {
+        var t = n.nodeValue;
+        URL_RE.lastIndex = 0;
+        if (!URL_RE.test(t)) return;
+        URL_RE.lastIndex = 0;
+        var frag = document.createDocumentFragment(), last = 0, m;
+        while ((m = URL_RE.exec(t)) !== null) {
+          var url = m[0];
+          var trailing = '';
+          while (url.length > 0 && /[.,;:!?]$/.test(url)) {
+            trailing = url.slice(-1) + trailing;
+            url = url.slice(0, -1);
+          }
+          if (m.index > last) frag.appendChild(document.createTextNode(t.slice(last, m.index)));
+          var a = document.createElement('a');
+          a.href = url;
+          a.textContent = url;
+          a.className = 'url-link';
+          frag.appendChild(a);
+          if (trailing) frag.appendChild(document.createTextNode(trailing));
+          last = m.index + m[0].length;
+        }
+        if (last < t.length) frag.appendChild(document.createTextNode(t.slice(last)));
+        n.parentNode.replaceChild(frag, n);
+      } else if (n.nodeType === 1) {
+        if (SKIP_TAGS[n.tagName]) return;
+        if (n.classList && (n.classList.contains('url-link') || n.classList.contains('emoji'))) return;
+        Array.prototype.slice.call(n.childNodes).forEach(walkUrls);
+      }
+    }
+    walkUrls(document.body);
+  })();
 })();
 </script>

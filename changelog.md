@@ -18,6 +18,13 @@ dan proyek ini mengikuti [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 - Code block: `font-family: var(--font-mono)` di `code`
 - Code block styling: padding 14px di wrapper, background di wrapper, `border-radius: 0`, `line-height: 0` di `<pre>` (fix strut), `overflow-y: hidden`, `line-height: 1.4` di `pre span`
 - Tabel: border-collapse + border 1px `#ddd` + padding `4px 8px` + `font-family: var(--font-mono)`
+- Mark (`==teks==`): square (border-radius 0), padding dirapetin (`0`)
+- Visited link: warna disamakan dengan link color (`--link-color`)
+- URL link: auto-detect + `font-family: var(--font-mono)` (via JS di `custom_body.html`)
+- Plain URL di body text: auto-link jadi `<a>` + mono (via JS)
+- Code block indented (4 spasi): `overflow-x: auto` di `<pre>` polos
+- Override `layouts/_default/single.html`: `<h1>{{ .Title }}</h1>` untuk semua halaman (kecuali Home)
+- Override `layouts/_default/list.html`: `<h1>{{ .Title }}</h1>` untuk section list
 - UL (kecuali `ul.blog-posts`): `list-style: none` + prefix `→` via `::before`
 - `hugo.toml`: `disableKinds` tambah `"term"`
 

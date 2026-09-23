@@ -87,6 +87,15 @@
 - Arrow prefix `→` di luar link
 - Override `nav.html`
 
+### Batch 3.8 (SELESAI): Mark + Link + H1
+- Mark (`==teks==`): square + padding 0 (rapet)
+- Visited link disamakan dengan link color
+- URL auto-detect → `font-family: var(--font-mono)`
+- Plain URL di body text auto-link jadi `<a>` + mono (JS, skip di `<pre>`/`<code>`)
+- Code block indented (4 spasi): scroll horizontal via `pre { overflow-x: auto }`
+- Override `single.html` + `list.html`: semua halaman punya `<h1>` (Home skip, pakai h1 manual di konten)
+- Catatan: `mark` rapet butuh padding 0 karena line-height body (1.5) bikin ruang vertikal ekstra
+
 ### Batch 3.7 (SELESAI): Markdown Styling + Cleanup
 - Tabel: border collapse + mono font
 - Code block: no line numbers, IBM Plex Mono, padding fix (strut/leading fix via line-height 0 di pre + 1.4 di span), border-radius 0
