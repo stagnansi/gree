@@ -21,6 +21,12 @@
 - Dark mode dimatikan (override `prefers-color-scheme`)
 - Markdown `==mark==` → background kuning `#ffff00`
 
+## Color Palette
+- Heading: `rgb(30 41 59)` (slate-800)
+- Text: `rgb(71 85 105)` (slate-600)
+- Link: `rgb(13 82 157)` (biru medium)
+- Dark override disamain dengan base (light mode dipaksa)
+
 ## Tipografi
 - `--font-main`: InterDisplay (heading)
 - `--font-secondary`: Inter (body)

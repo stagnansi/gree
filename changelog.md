@@ -18,6 +18,7 @@ dan proyek ini mengikuti [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 - Tombol "↑ KEMBALI KE ATAS" di footer (kondisional via JS, hanya muncul kalau halaman scrollable)
 
 ### Changed
+- Color palette: slate (--heading-color: rgb(30 41 59), --text-color: rgb(71 85 105), --link-color: rgb(13 82 157)) — termasuk dark override disamain
 - Font hanzi: Google Fonts Noto Sans SC → self-host subset (`static/fonts/noto-sans-sc-subset.woff2`, 1.8 KB)
 - Code block: `lineNos = false` di hugo.toml (hilangkan nomor baris)
 - Code block: `font-family: var(--font-mono)` di `code`
