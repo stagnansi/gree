@@ -8,8 +8,10 @@ Setiap dealer punya hari spesial. Ini daftarnya — biar nggak ada yang telat ki
 
 | # | Dealer | Date |
 | :-: | -------- | :----: |
-| 1 | CV. MITRA JAYA | ==09==/09 |
-| 2 | TOKO NASIONAL | ==21==/09 |
+| 1 | CV. SUMBER UTAMA GLOBAL | ==07==/10 |
+| 2 | PT. PONTI MAXINDO TEHNIK | ==14==/10 |
+| 3 | PT. SEJUK JAYA ABADI | ==25==/10 |
+| 4 | SUKA SUARA ELEKTRONIK | ==21==/10 |
 
 Kirim pengajuan CA kue ultah tahun ke Marketing H-14. **Foto time stamp + nota**, simpan sebagai bukti close CA.
 
